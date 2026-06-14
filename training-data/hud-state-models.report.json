@@ -1,0 +1,72 @@
+{
+  "D": {
+    "samples": 50,
+    "labels": {
+      "cooldown": 16,
+      "disabled": 6,
+      "ready": 28
+    },
+    "validation_accuracy": 1.0
+  },
+  "E": {
+    "samples": 189,
+    "labels": {
+      "cooldown": 23,
+      "disabled": 33,
+      "missing": 71,
+      "ready": 27,
+      "recast": 35
+    },
+    "validation_accuracy": 0.9787234042553191
+  },
+  "F": {
+    "samples": 69,
+    "labels": {
+      "cooldown": 38,
+      "disabled": 9,
+      "ready": 22
+    },
+    "validation_accuracy": 1.0
+  },
+  "Q": {
+    "samples": 243,
+    "labels": {
+      "cooldown": 31,
+      "disabled": 36,
+      "missing": 13,
+      "ready": 53,
+      "recast": 110
+    },
+    "validation_accuracy": 1.0
+  },
+  "R": {
+    "samples": 105,
+    "labels": {
+      "cooldown": 65,
+      "disabled": 14,
+      "ready": 26
+    },
+    "validation_accuracy": 1.0
+  },
+  "W": {
+    "samples": 135,
+    "labels": {
+      "cooldown": 46,
+      "disabled": 9,
+      "missing": 38,
+      "ready": 19,
+      "recast": 23
+    },
+    "validation_accuracy": 1.0
+  },
+  "prowler": {
+    "samples": 90,
+    "labels": {
+      "cooldown": 48,
+      "disabled": 10,
+      "missing": 3,
+      "ready": 29
+    },
+    "validation_accuracy": 1.0
+  }
+}

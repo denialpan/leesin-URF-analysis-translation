@@ -1,0 +1,69 @@
+{
+  "D": {
+    "samples": 37,
+    "labels": {
+      "cooldown": 28,
+      "disabled": 1,
+      "ready": 8
+    },
+    "validation_accuracy": null
+  },
+  "E": {
+    "samples": 57,
+    "labels": {
+      "cooldown": 14,
+      "disabled": 9,
+      "ready": 24,
+      "recast": 10
+    },
+    "validation_accuracy": 1.0
+  },
+  "F": {
+    "samples": 67,
+    "labels": {
+      "cooldown": 59,
+      "disabled": 2,
+      "ready": 6
+    },
+    "validation_accuracy": 0.9411764705882353
+  },
+  "Q": {
+    "samples": 105,
+    "labels": {
+      "cooldown": 11,
+      "disabled": 1,
+      "ready": 22,
+      "recast": 71
+    },
+    "validation_accuracy": null
+  },
+  "R": {
+    "samples": 68,
+    "labels": {
+      "cooldown": 15,
+      "disabled": 27,
+      "ready": 26
+    },
+    "validation_accuracy": 1.0
+  },
+  "W": {
+    "samples": 109,
+    "labels": {
+      "cooldown": 40,
+      "disabled": 21,
+      "ready": 42,
+      "recast": 6
+    },
+    "validation_accuracy": 0.9629629629629629
+  },
+  "rocketbelt": {
+    "samples": 55,
+    "labels": {
+      "cooldown": 25,
+      "disabled": 12,
+      "missing": 12,
+      "ready": 6
+    },
+    "validation_accuracy": 1.0
+  }
+}

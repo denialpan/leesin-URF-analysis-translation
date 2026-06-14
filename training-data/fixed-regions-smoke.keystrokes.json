@@ -1,0 +1,204 @@
+{
+  "source": "D:\\daniel\\leesin-urf-compilation-project\\training-data\\fixed-regions-smoke.hud-states.json",
+  "recast_timeout_seconds": 3.0,
+  "rules": {
+    "q": [
+      {
+        "key": "Q1",
+        "from": "ready",
+        "to": "*"
+      },
+      {
+        "key": "Q2",
+        "from": "recast",
+        "to": "*"
+      }
+    ],
+    "w": [
+      {
+        "key": "W",
+        "from": "ready",
+        "to": "recast"
+      }
+    ],
+    "e": [
+      {
+        "key": "E",
+        "from": "ready",
+        "to": "*"
+      }
+    ],
+    "r": [
+      {
+        "key": "R",
+        "from": "ready",
+        "to": "cooldown"
+      }
+    ],
+    "d": [
+      {
+        "key": "cleanse",
+        "from": "ready",
+        "to": "cooldown"
+      }
+    ],
+    "f": [
+      {
+        "key": "flash",
+        "from": "ready",
+        "to": "cooldown"
+      }
+    ],
+    "prowler": [
+      {
+        "key": "prowler",
+        "from": "ready",
+        "to": "cooldown"
+      }
+    ]
+  },
+  "events": [
+    {
+      "timestamp": 94.166667,
+      "frame": 5650,
+      "region": "W",
+      "key": "W",
+      "transition": {
+        "from": "ready",
+        "to": "recast"
+      },
+      "confidence": 0.999999,
+      "recast_validation": {
+        "next_state": "cooldown",
+        "next_change_timestamp": 94.883333,
+        "next_change_seconds": 0.716666
+      }
+    },
+    {
+      "timestamp": 94.766667,
+      "frame": 5686,
+      "region": "Q",
+      "key": "Q1",
+      "transition": {
+        "from": "ready",
+        "to": "cooldown"
+      },
+      "confidence": 0.99997
+    },
+    {
+      "timestamp": 96.3,
+      "frame": 5778,
+      "region": "prowler",
+      "key": "prowler",
+      "transition": {
+        "from": "ready",
+        "to": "cooldown"
+      },
+      "confidence": 0.999925
+    },
+    {
+      "timestamp": 97.15,
+      "frame": 5829,
+      "region": "Q",
+      "key": "Q1",
+      "transition": {
+        "from": "ready",
+        "to": "cooldown"
+      },
+      "confidence": 0.999953
+    },
+    {
+      "timestamp": 97.416667,
+      "frame": 5845,
+      "region": "E",
+      "key": "E",
+      "transition": {
+        "from": "ready",
+        "to": "cooldown"
+      },
+      "confidence": 0.999463
+    },
+    {
+      "timestamp": 97.933333,
+      "frame": 5876,
+      "region": "Q",
+      "key": "Q2",
+      "transition": {
+        "from": "recast",
+        "to": "cooldown"
+      },
+      "confidence": 0.999974
+    },
+    {
+      "timestamp": 98.666667,
+      "frame": 5920,
+      "region": "W",
+      "key": "W",
+      "transition": {
+        "from": "ready",
+        "to": "recast"
+      },
+      "confidence": 0.999998,
+      "recast_validation": {
+        "next_state": "cooldown",
+        "next_change_timestamp": 98.733333,
+        "next_change_seconds": 0.066666
+      }
+    },
+    {
+      "timestamp": 99.75,
+      "frame": 5985,
+      "region": "Q",
+      "key": "Q1",
+      "transition": {
+        "from": "ready",
+        "to": "cooldown"
+      },
+      "confidence": 0.999985
+    },
+    {
+      "timestamp": 100.066667,
+      "frame": 6004,
+      "region": "Q",
+      "key": "Q2",
+      "transition": {
+        "from": "recast",
+        "to": "cooldown"
+      },
+      "confidence": 0.999985
+    },
+    {
+      "timestamp": 101.166667,
+      "frame": 6070,
+      "region": "E",
+      "key": "E",
+      "transition": {
+        "from": "ready",
+        "to": "recast"
+      },
+      "confidence": 0.999477,
+      "recast_validation": {
+        "next_state": "cooldown",
+        "next_change_timestamp": 101.583333,
+        "next_change_seconds": 0.416666
+      }
+    },
+    {
+      "timestamp": 101.866667,
+      "frame": 6112,
+      "region": "W",
+      "key": "W",
+      "transition": {
+        "from": "ready",
+        "to": "recast"
+      },
+      "confidence": 0.979064,
+      "recast_validation": {
+        "next_state": "cooldown",
+        "next_change_timestamp": 102.083333,
+        "next_change_seconds": 0.216666
+      }
+    }
+  ],
+  "rejected_candidates": []
+}

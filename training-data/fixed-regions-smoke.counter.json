@@ -1,0 +1,261 @@
+{
+  "source": "D:\\daniel\\leesin-urf-compilation-project\\training-data\\fixed-regions-smoke.hud-states.json",
+  "rules": {
+    "q": {
+      "recast": 1,
+      "__default__": 0
+    },
+    "w": {
+      "ready": 1,
+      "__default__": 0
+    },
+    "f": {
+      "ready": 1,
+      "__default__": 0
+    },
+    "prowler": {
+      "ready": 1,
+      "__default__": 0
+    }
+  },
+  "timeline": [
+    {
+      "start": 89.5,
+      "end": 89.716667,
+      "total": 0,
+      "contributions": {
+        "q": 0,
+        "w": 0,
+        "f": 0,
+        "prowler": 0
+      },
+      "states": {
+        "q": "disabled",
+        "w": "disabled",
+        "f": "disabled",
+        "prowler": "missing"
+      }
+    },
+    {
+      "start": 89.716667,
+      "end": 89.866667,
+      "total": 3,
+      "contributions": {
+        "q": 0,
+        "w": 1,
+        "f": 1,
+        "prowler": 1
+      },
+      "states": {
+        "q": "ready",
+        "w": "ready",
+        "f": "ready",
+        "prowler": "ready"
+      }
+    },
+    {
+      "start": 89.866667,
+      "end": 93.583333,
+      "total": 0,
+      "contributions": {
+        "q": 0,
+        "w": 0,
+        "f": 0,
+        "prowler": 0
+      },
+      "states": {
+        "q": "disabled",
+        "w": "disabled",
+        "f": "disabled",
+        "prowler": "disabled"
+      }
+    },
+    {
+      "start": 93.583333,
+      "end": 94.166667,
+      "total": 3,
+      "contributions": {
+        "q": 0,
+        "w": 1,
+        "f": 1,
+        "prowler": 1
+      },
+      "states": {
+        "q": "ready",
+        "w": "ready",
+        "f": "ready",
+        "prowler": "ready"
+      }
+    },
+    {
+      "start": 94.166667,
+      "end": 96.3,
+      "total": 2,
+      "contributions": {
+        "q": 0,
+        "w": 0,
+        "f": 1,
+        "prowler": 1
+      },
+      "states": {
+        "q": "ready",
+        "w": "recast",
+        "f": "ready",
+        "prowler": "ready"
+      }
+    },
+    {
+      "start": 96.3,
+      "end": 97.016667,
+      "total": 1,
+      "contributions": {
+        "q": 0,
+        "w": 0,
+        "f": 1,
+        "prowler": 0
+      },
+      "states": {
+        "q": "cooldown",
+        "w": "cooldown",
+        "f": "ready",
+        "prowler": "cooldown"
+      }
+    },
+    {
+      "start": 97.016667,
+      "end": 97.233333,
+      "total": 2,
+      "contributions": {
+        "q": 0,
+        "w": 1,
+        "f": 1,
+        "prowler": 0
+      },
+      "states": {
+        "q": "ready",
+        "w": "ready",
+        "f": "ready",
+        "prowler": "cooldown"
+      }
+    },
+    {
+      "start": 97.233333,
+      "end": 97.933333,
+      "total": 3,
+      "contributions": {
+        "q": 1,
+        "w": 1,
+        "f": 1,
+        "prowler": 0
+      },
+      "states": {
+        "q": "recast",
+        "w": "ready",
+        "f": "ready",
+        "prowler": "cooldown"
+      }
+    },
+    {
+      "start": 97.933333,
+      "end": 98.666667,
+      "total": 2,
+      "contributions": {
+        "q": 0,
+        "w": 1,
+        "f": 1,
+        "prowler": 0
+      },
+      "states": {
+        "q": "cooldown",
+        "w": "ready",
+        "f": "ready",
+        "prowler": "cooldown"
+      }
+    },
+    {
+      "start": 98.666667,
+      "end": 100.0,
+      "total": 1,
+      "contributions": {
+        "q": 0,
+        "w": 0,
+        "f": 1,
+        "prowler": 0
+      },
+      "states": {
+        "q": "cooldown",
+        "w": "recast",
+        "f": "ready",
+        "prowler": "cooldown"
+      }
+    },
+    {
+      "start": 100.0,
+      "end": 100.066667,
+      "total": 2,
+      "contributions": {
+        "q": 1,
+        "w": 0,
+        "f": 1,
+        "prowler": 0
+      },
+      "states": {
+        "q": "recast",
+        "w": "cooldown",
+        "f": "ready",
+        "prowler": "cooldown"
+      }
+    },
+    {
+      "start": 100.066667,
+      "end": 101.516667,
+      "total": 1,
+      "contributions": {
+        "q": 0,
+        "w": 0,
+        "f": 1,
+        "prowler": 0
+      },
+      "states": {
+        "q": "cooldown",
+        "w": "cooldown",
+        "f": "ready",
+        "prowler": "cooldown"
+      }
+    },
+    {
+      "start": 101.516667,
+      "end": 101.866667,
+      "total": 2,
+      "contributions": {
+        "q": 0,
+        "w": 1,
+        "f": 1,
+        "prowler": 0
+      },
+      "states": {
+        "q": "cooldown",
+        "w": "ready",
+        "f": "ready",
+        "prowler": "cooldown"
+      }
+    },
+    {
+      "start": 101.866667,
+      "end": 102.5,
+      "total": 1,
+      "contributions": {
+        "q": 0,
+        "w": 0,
+        "f": 1,
+        "prowler": 0
+      },
+      "states": {
+        "q": "cooldown",
+        "w": "recast",
+        "f": "ready",
+        "prowler": "cooldown"
+      }
+    }
+  ]
+}
