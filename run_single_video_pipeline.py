@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import subprocess
 import sys
 import time
 from pathlib import Path
@@ -54,7 +55,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--skip-transcription",
         action="store_true",
-        help="Only run HUD analysis and overlay generation.",
+        help=(
+            "Reuse the existing Chinese transcript. With contextual "
+            "translation enabled, only run the Qwen/context stage."
+        ),
     )
     parser.add_argument(
         "--keep-vocals",
@@ -68,6 +72,49 @@ def parse_args() -> argparse.Namespace:
         help=(
             "High uses more aggressive confidence checks and wider raw-audio "
             "context for questionable Chinese cues."
+        ),
+    )
+    parser.add_argument(
+        "--contextual-translation",
+        choices=("off", "bundle", "api"),
+        default="off",
+        help=(
+            "Build gameplay-aware translation jobs, or submit them to an "
+            "OpenAI-compatible vision endpoint."
+        ),
+    )
+    parser.add_argument("--context-api-url")
+    parser.add_argument("--context-model")
+    parser.add_argument(
+        "--context-api-key-env",
+        default="OPENAI_API_KEY",
+    )
+    parser.add_argument("--context-api-context-size", type=int, default=8192)
+    parser.add_argument("--context-request-timeout", type=float, default=600.0)
+    parser.add_argument("--context-retries", type=int, default=2)
+    parser.add_argument(
+        "--context-force-results",
+        action="store_true",
+        help="Discard and regenerate completed contextual API results.",
+    )
+    parser.add_argument("--context-start-cue", type=int, default=1)
+    parser.add_argument("--context-end-cue", type=int)
+    parser.add_argument(
+        "--context-start-frame",
+        type=int,
+        help="Inclusive source-video frame where contextual translation begins.",
+    )
+    parser.add_argument(
+        "--context-end-frame",
+        type=int,
+        help="Inclusive source-video frame where contextual translation ends.",
+    )
+    parser.add_argument(
+        "--context-no-audio-recovery",
+        action="store_true",
+        help=(
+            "Do not retry empty frame ranges using multiple audio-volume "
+            "profiles and focused Chinese ASR."
         ),
     )
     parser.add_argument(
@@ -104,9 +151,39 @@ def main() -> None:
         raise ValueError("--stable-frames must be at least one.")
     if args.recast_timeout <= 0:
         raise ValueError("--recast-timeout must be greater than zero.")
-    if args.skip_hud and args.skip_transcription:
+    if args.context_request_timeout <= 0:
+        raise ValueError("--context-request-timeout must be greater than zero.")
+    if args.context_retries < 0:
+        raise ValueError("--context-retries cannot be negative.")
+    if (args.context_start_frame is None) != (
+        args.context_end_frame is None
+    ):
         raise ValueError(
-            "--skip-hud and --skip-transcription cannot both be used."
+            "--context-start-frame and --context-end-frame must be "
+            "provided together."
+        )
+    if args.context_start_frame is not None:
+        if args.context_start_frame < 0:
+            raise ValueError("--context-start-frame cannot be negative.")
+        if args.context_end_frame < args.context_start_frame:
+            raise ValueError(
+                "--context-end-frame cannot precede --context-start-frame."
+            )
+    if (
+        args.skip_hud
+        and args.skip_transcription
+        and args.contextual_translation == "off"
+    ):
+        raise ValueError(
+            "--skip-hud and --skip-transcription require "
+            "--contextual-translation bundle or api."
+        )
+    if args.contextual_translation == "api" and (
+        not args.context_api_url or not args.context_model
+    ):
+        raise ValueError(
+            "API contextual translation requires --context-api-url "
+            "and --context-model."
         )
 
     style = detect_style(video) if args.style == "auto" else args.style
@@ -128,6 +205,56 @@ def main() -> None:
         process_hud(video, output_dir, style, args)
     if not args.skip_transcription:
         process_transcription(video, output_dir, args)
+    if args.contextual_translation != "off":
+        command = [
+            sys.executable,
+            str(Path(__file__).resolve().parent / "generate_contextual_translation.py"),
+            str(video),
+            "--output-dir",
+            str(output_dir / "contextual-translation"),
+            "--provider",
+            args.contextual_translation,
+            "--start-cue",
+            str(args.context_start_cue),
+        ]
+        if args.context_end_cue is not None:
+            command.extend(["--end-cue", str(args.context_end_cue)])
+        if args.context_start_frame is not None:
+            command.extend(
+                [
+                    "--start-frame",
+                    str(args.context_start_frame),
+                    "--end-frame",
+                    str(args.context_end_frame),
+                ]
+            )
+        if args.context_no_audio_recovery:
+            command.append("--no-audio-recovery")
+        if args.contextual_translation == "api":
+            command.extend(
+                [
+                    "--api-url",
+                    args.context_api_url,
+                    "--model",
+                    args.context_model,
+                    "--api-key-env",
+                    args.context_api_key_env,
+                    "--api-context-size",
+                    str(args.context_api_context_size),
+                    "--request-timeout",
+                    str(args.context_request_timeout),
+                    "--retries",
+                    str(args.context_retries),
+                ]
+            )
+        if args.force:
+            command.append("--force-frames")
+        if args.context_force_results:
+            command.append("--force-results")
+        print("\nBuild contextual gameplay translation")
+        print(f"  > {subprocess.list2cmdline(command)}")
+        if not args.dry_run:
+            subprocess.run(command, check=True)
 
     missing = (
         [] if args.dry_run else validate_outputs(video, output_dir, args)

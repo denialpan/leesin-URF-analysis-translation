@@ -23,6 +23,7 @@ downloads/
 *.tmp
 
 /batch-pipeline-summary.json
+contextual-translation/
 
 /testtranslation/*
 !/testtranslation/test.md
