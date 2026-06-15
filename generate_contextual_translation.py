@@ -31,24 +31,32 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 WHISPER_PYTHON = SCRIPT_DIR / ".venv-whisperx" / "Scripts" / "python.exe"
-SYSTEM_PROMPT = """You correct and translate Chinese League of Legends gameplay commentary.
+TEXT_SYSTEM_PROMPT = """You reconstruct and translate Chinese speech from League of Legends gameplay videos.
 
-Use all supplied evidence:
-- raw ASR Chinese and word confidence
-- nearby Chinese cues
-- gameplay frames
-- HUD state changes, keystrokes, and counter state
+Audio-derived Chinese is the primary evidence. Nearby dialogue and the supplied glossary are secondary evidence.
+Do not infer meaning from gameplay visuals in this stage.
 
 Rules:
-1. Reconstruct the most likely spoken Chinese before translating.
-2. Use visual gameplay only to resolve ambiguity; do not invent unspoken details.
-3. Preserve League terminology, ability keys, combos, champion names, and casual streamer tone.
-4. Translate meaning naturally, not character by character.
+1. Correct obvious ASR homophones only when Chinese grammar and nearby dialogue support the correction.
+2. Translate the speaker's conversational meaning naturally, not character by character.
+3. Preserve ability letters, champion names, and established League terms only when the audio supports them.
+4. Do not force League terminology into ordinary conversation.
 5. Use lowercase informal English with no unnecessary punctuation.
-6. If evidence is insufficient, retain uncertainty and set needs_review=true.
-7. Return only one JSON object with these keys:
-   corrected_chinese, english, confidence, needs_review, reasoning.
-confidence must be a number from 0 to 1. reasoning must be brief.
+6. Set needs_visual_verification=true only when visible gameplay could resolve a specific ambiguity.
+7. Return only JSON with:
+   corrected_chinese, english, confidence, needs_visual_verification,
+   ambiguity, needs_review, reasoning.
+confidence must be from 0 to 1. Keep ambiguity and reasoning brief.
+"""
+
+VISION_SYSTEM_PROMPT = """You verify an audio-first Chinese-to-English translation using League of Legends gameplay frames.
+
+The audio-first translation is the default. Revise it only when visible evidence clearly resolves a stated ambiguity.
+Do not invent speech from gameplay actions, and do not force League terminology into ordinary conversation.
+
+Return only JSON with:
+corrected_chinese, english, confidence, needs_review, decision, reasoning.
+decision must be "accept" or "revise". Keep reasoning brief.
 """
 
 
@@ -77,7 +85,26 @@ def parse_args() -> argparse.Namespace:
         help="Bundle is offline. API calls an OpenAI-compatible vision endpoint.",
     )
     parser.add_argument("--api-url")
-    parser.add_argument("--model")
+    parser.add_argument(
+        "--model",
+        help="Legacy alias used as the vision model.",
+    )
+    parser.add_argument("--text-model", default="qwen2.5:14b")
+    parser.add_argument("--vision-model", default="qwen2.5vl:7b")
+    parser.add_argument(
+        "--glossary",
+        type=Path,
+        default=SCRIPT_DIR / "league-terminology.json",
+    )
+    parser.add_argument(
+        "--visual-verify-threshold",
+        type=float,
+        default=0.78,
+        help=(
+            "Run visual verification below this text-stage confidence, or "
+            "when the text model explicitly requests it."
+        ),
+    )
     parser.add_argument(
         "--api-key-env",
         default="OPENAI_API_KEY",
@@ -548,38 +575,46 @@ def encode_image(path: Path) -> str:
     return base64.b64encode(path.read_bytes()).decode("ascii")
 
 
-def api_messages(job: dict[str, object]) -> list[dict[str, object]]:
+def api_messages(
+    job: dict[str, object],
+    system_prompt: str,
+    instruction: str,
+    include_images: bool,
+) -> list[dict[str, object]]:
     compact_job = dict(job)
-    compact_job["frames"] = [
+    frames = list(compact_job.pop("frames", []))
+    compact_job["frame_timestamps"] = [
         {
             "timestamp": frame["timestamp"],
             "label": Path(str(frame["path"])).name,
         }
-        for frame in job["frames"]
+        for frame in frames
     ]
     content: list[dict[str, object]] = [
         {
             "type": "text",
             "text": (
-                "Analyze this subtitle cue and its gameplay context.\n"
+                instruction
+                + "\n"
                 + json.dumps(compact_job, ensure_ascii=False)
             ),
         }
     ]
-    for frame in job["frames"]:
-        content.append(
-            {
-                "type": "image_url",
-                "image_url": {
-                    "url": (
-                        "data:image/jpeg;base64,"
-                        + encode_image(Path(str(frame["path"])))
-                    )
-                },
-            }
-        )
+    if include_images:
+        for frame in frames:
+            content.append(
+                {
+                    "type": "image_url",
+                    "image_url": {
+                        "url": (
+                            "data:image/jpeg;base64,"
+                            + encode_image(Path(str(frame["path"])))
+                        )
+                    },
+                }
+            )
     return [
-        {"role": "system", "content": SYSTEM_PROMPT},
+        {"role": "system", "content": system_prompt},
         {"role": "user", "content": content},
     ]
 
@@ -598,24 +633,32 @@ def ollama_api_url(api_url: str) -> str | None:
     )
 
 
-def ollama_messages(job: dict[str, object]) -> list[dict[str, object]]:
+def ollama_messages(
+    job: dict[str, object],
+    system_prompt: str,
+    instruction: str,
+    include_images: bool,
+) -> list[dict[str, object]]:
     compact_job = dict(job)
-    frames = list(compact_job.pop("frames"))
+    frames = list(compact_job.pop("frames", []))
     compact_job["frame_timestamps"] = [
         frame["timestamp"] for frame in frames
     ]
-    return [
-        {"role": "system", "content": SYSTEM_PROMPT},
-        {
+    user_message: dict[str, object] = {
             "role": "user",
             "content": (
-                "Analyze this subtitle cue and its gameplay context.\n"
+                instruction
+                + "\n"
                 + json.dumps(compact_job, ensure_ascii=False)
             ),
-            "images": [
+        }
+    if include_images:
+        user_message["images"] = [
                 encode_image(Path(str(frame["path"]))) for frame in frames
-            ],
-        },
+            ]
+    return [
+        {"role": "system", "content": system_prompt},
+        user_message,
     ]
 
 
@@ -633,11 +676,14 @@ def reduced_job(job: dict[str, object], image_limit: int) -> dict[str, object]:
             frames = [frames[index] for index in indexes]
     compact["frames"] = frames
 
-    gameplay = dict(job["gameplay"])
-    gameplay["hud_events"] = list(gameplay.get("hud_events", []))[:16]
-    gameplay["keystrokes"] = list(gameplay.get("keystrokes", []))[:12]
-    gameplay["counter_states"] = list(gameplay.get("counter_states", []))[:10]
-    compact["gameplay"] = gameplay
+    if "gameplay" in job:
+        gameplay = dict(job["gameplay"])
+        gameplay["hud_events"] = list(gameplay.get("hud_events", []))[:16]
+        gameplay["keystrokes"] = list(gameplay.get("keystrokes", []))[:12]
+        gameplay["counter_states"] = list(
+            gameplay.get("counter_states", [])
+        )[:10]
+        compact["gameplay"] = gameplay
     compact["asr_words"] = list(job.get("asr_words", []))[:40]
     return compact
 
@@ -776,9 +822,12 @@ def call_api(
     timeout: float,
     retries: int,
     context_size: int,
+    system_prompt: str,
+    instruction: str,
+    include_images: bool,
 ) -> dict[str, object]:
     last_error: Exception | None = None
-    image_limits = (5, 3, 1)
+    image_limits = (5, 3, 1) if include_images else (0,)
     native_ollama_url = ollama_api_url(api_url)
     for image_limit in image_limits:
         request_job = reduced_job(job, image_limit)
@@ -786,7 +835,12 @@ def call_api(
             request_url = native_ollama_url
             body = {
                 "model": model,
-                "messages": ollama_messages(request_job),
+                "messages": ollama_messages(
+                    request_job,
+                    system_prompt,
+                    instruction,
+                    include_images,
+                ),
                 "stream": True,
                 "think": False,
                 "format": "json",
@@ -800,7 +854,12 @@ def call_api(
             request_url = api_url
             body = {
                 "model": model,
-                "messages": api_messages(request_job),
+                "messages": api_messages(
+                    request_job,
+                    system_prompt,
+                    instruction,
+                    include_images,
+                ),
                 "temperature": 0.1,
                 "max_tokens": 512,
                 "response_format": {"type": "json_object"},
@@ -893,11 +952,81 @@ def write_srt(
     path.write_text("\n\n".join(blocks) + "\n", encoding="utf-8")
 
 
-def normalized_result(
+def load_glossary(path: Path) -> dict[str, object]:
+    resolved = path.resolve()
+    if not resolved.is_file():
+        raise FileNotFoundError(f"League glossary not found: {resolved}")
+    value = json.loads(resolved.read_text(encoding="utf-8"))
+    if not isinstance(value, dict):
+        raise ValueError("League glossary must contain a JSON object.")
+    return value
+
+
+def text_translation_job(
+    job: dict[str, object],
+    glossary: dict[str, object],
+) -> dict[str, object]:
+    return {
+        "cue": job["cue"],
+        "start": job["start"],
+        "end": job["end"],
+        "raw_chinese": job["raw_chinese"],
+        "audio_recovery_profile": job.get("audio_recovery_profile"),
+        "asr_mean_word_probability": job.get("asr_mean_word_probability"),
+        "asr_words": job.get("asr_words", []),
+        "nearby_dialogue": job.get("nearby_dialogue", []),
+        "glossary": glossary,
+        "frames": [],
+    }
+
+
+def visual_verification_job(
+    job: dict[str, object],
+    text_response: dict[str, object],
+    glossary: dict[str, object],
+) -> dict[str, object]:
+    return {
+        "cue": job["cue"],
+        "start": job["start"],
+        "end": job["end"],
+        "raw_chinese": job["raw_chinese"],
+        "audio_recovery_profile": job.get("audio_recovery_profile"),
+        "asr_mean_word_probability": job.get("asr_mean_word_probability"),
+        "nearby_dialogue": job.get("nearby_dialogue", []),
+        "audio_first_translation": text_response,
+        "gameplay": job.get("gameplay", {}),
+        "glossary": glossary,
+        "frames": job.get("frames", []),
+    }
+
+
+def response_confidence(response: dict[str, object]) -> float:
+    return min(1.0, max(0.0, float(response.get("confidence", 0.0))))
+
+
+def should_verify_visually(
     job: dict[str, object],
     response: dict[str, object],
+    threshold: float,
+) -> bool:
+    raw = re.sub(r"\s+", "", str(job["raw_chinese"]))
+    return (
+        bool(response.get("needs_visual_verification", False))
+        or response_confidence(response) < threshold
+        or len(raw) <= 4
+        or float(job.get("asr_mean_word_probability") or 0.0) < 0.65
+    )
+
+
+def normalized_result(
+    job: dict[str, object],
+    text_response: dict[str, object],
+    visual_response: dict[str, object] | None,
+    text_model: str,
+    vision_model: str,
 ) -> dict[str, object]:
-    confidence = min(1.0, max(0.0, float(response.get("confidence", 0.0))))
+    response = visual_response or text_response
+    confidence = response_confidence(response)
     raw_chinese = str(job["raw_chinese"]).strip()
     corrected_chinese = str(
         response.get("corrected_chinese", raw_chinese)
@@ -921,6 +1050,18 @@ def normalized_result(
             or unchanged_short_fragment
         ),
         "reasoning": str(response.get("reasoning", "")).strip(),
+        "text_model": text_model,
+        "vision_model": vision_model if visual_response else None,
+        "visual_verification": (
+            {
+                "used": True,
+                "decision": str(visual_response.get("decision", "")).strip(),
+                "response": visual_response,
+            }
+            if visual_response
+            else {"used": False}
+        ),
+        "text_stage": text_response,
         "asr_mean_word_probability": job.get("asr_mean_word_probability"),
         "frames": job["frames"],
     }
@@ -980,11 +1121,18 @@ def main() -> None:
         raise ValueError("--retries cannot be negative.")
     if not 0 <= args.review_threshold <= 1:
         raise ValueError("--review-threshold must be between zero and one.")
-    if args.provider == "api" and (not args.api_url or not args.model):
-        raise ValueError("API mode requires --api-url and --model.")
+    if not 0 <= args.visual_verify_threshold <= 1:
+        raise ValueError(
+            "--visual-verify-threshold must be between zero and one."
+        )
+    if args.provider == "api" and not args.api_url:
+        raise ValueError("API mode requires --api-url.")
 
     transcript_path = find_transcript(video, args.transcript)
     transcript = json.loads(transcript_path.read_text(encoding="utf-8"))
+    glossary = load_glossary(args.glossary)
+    text_model = args.text_model
+    vision_model = args.model or args.vision_model
     artifact_root = output_root_for_video(video)
     output_dir = (
         args.output_dir.resolve()
@@ -1056,7 +1204,11 @@ def main() -> None:
                     if args.start_frame is not None
                     else None
                 ),
-                "system_prompt": SYSTEM_PROMPT,
+                "text_system_prompt": TEXT_SYSTEM_PROMPT,
+                "vision_system_prompt": VISION_SYSTEM_PROMPT,
+                "glossary": glossary,
+                "text_model": text_model,
+                "vision_model": vision_model,
                 "jobs": jobs,
             },
             ensure_ascii=False,
@@ -1091,21 +1243,62 @@ def main() -> None:
             < 0.05
             and abs(float(previous.get("end", -1)) - float(job["end"]))
             < 0.05
+            and previous.get("text_model") == text_model
+            and (
+                previous.get("vision_model") in {None, vision_model}
+            )
         )
         if reusable:
             result = previous
         else:
             try:
-                response = call_api(
-                    job,
+                print(f"\n  text translation cue {cue_number}: {text_model}")
+                text_response = call_api(
+                    text_translation_job(job, glossary),
                     args.api_url,
-                    args.model,
+                    text_model,
                     api_key,
                     args.request_timeout,
                     args.retries,
                     args.api_context_size,
+                    TEXT_SYSTEM_PROMPT,
+                    "Reconstruct and translate this audio-derived Chinese cue.",
+                    False,
                 )
-                result = normalized_result(job, response)
+                visual_response = None
+                if should_verify_visually(
+                    job,
+                    text_response,
+                    args.visual_verify_threshold,
+                ):
+                    print(
+                        f"  visual verification cue {cue_number}: "
+                        f"{vision_model}"
+                    )
+                    visual_response = call_api(
+                        visual_verification_job(
+                            job, text_response, glossary
+                        ),
+                        args.api_url,
+                        vision_model,
+                        api_key,
+                        args.request_timeout,
+                        args.retries,
+                        args.api_context_size,
+                        VISION_SYSTEM_PROMPT,
+                        (
+                            "Verify the audio-first translation. Revise only "
+                            "if the frames clearly resolve its ambiguity."
+                        ),
+                        True,
+                    )
+                result = normalized_result(
+                    job,
+                    text_response,
+                    visual_response,
+                    text_model,
+                    vision_model,
+                )
             except Exception as error:
                 failures.append(
                     {
@@ -1123,7 +1316,8 @@ def main() -> None:
                     json.dumps(
                         {
                             "video": str(video),
-                            "model": args.model,
+                            "text_model": text_model,
+                            "vision_model": vision_model,
                             "results": results,
                             "failures": failures,
                         },
@@ -1139,7 +1333,8 @@ def main() -> None:
             json.dumps(
                 {
                     "video": str(video),
-                    "model": args.model,
+                    "text_model": text_model,
+                    "vision_model": vision_model,
                     "results": results,
                     "failures": failures,
                 },

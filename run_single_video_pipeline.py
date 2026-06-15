@@ -84,7 +84,28 @@ def parse_args() -> argparse.Namespace:
         ),
     )
     parser.add_argument("--context-api-url")
-    parser.add_argument("--context-model")
+    parser.add_argument(
+        "--context-model",
+        help="Legacy alias for --context-vision-model.",
+    )
+    parser.add_argument(
+        "--context-text-model",
+        default="qwen2.5:14b",
+    )
+    parser.add_argument(
+        "--context-vision-model",
+        default="qwen2.5vl:7b",
+    )
+    parser.add_argument(
+        "--context-glossary",
+        type=Path,
+        default=Path(__file__).resolve().parent / "league-terminology.json",
+    )
+    parser.add_argument(
+        "--context-visual-verify-threshold",
+        type=float,
+        default=0.78,
+    )
     parser.add_argument(
         "--context-api-key-env",
         default="OPENAI_API_KEY",
@@ -155,6 +176,17 @@ def main() -> None:
         raise ValueError("--context-request-timeout must be greater than zero.")
     if args.context_retries < 0:
         raise ValueError("--context-retries cannot be negative.")
+    if not 0 <= args.context_visual_verify_threshold <= 1:
+        raise ValueError(
+            "--context-visual-verify-threshold must be between zero and one."
+        )
+    if (
+        args.contextual_translation != "off"
+        and not args.context_glossary.resolve().is_file()
+    ):
+        raise FileNotFoundError(
+            f"League glossary not found: {args.context_glossary.resolve()}"
+        )
     if (args.context_start_frame is None) != (
         args.context_end_frame is None
     ):
@@ -178,12 +210,9 @@ def main() -> None:
             "--skip-hud and --skip-transcription require "
             "--contextual-translation bundle or api."
         )
-    if args.contextual_translation == "api" and (
-        not args.context_api_url or not args.context_model
-    ):
+    if args.contextual_translation == "api" and not args.context_api_url:
         raise ValueError(
-            "API contextual translation requires --context-api-url "
-            "and --context-model."
+            "API contextual translation requires --context-api-url."
         )
 
     style = detect_style(video) if args.style == "auto" else args.style
@@ -231,12 +260,21 @@ def main() -> None:
         if args.context_no_audio_recovery:
             command.append("--no-audio-recovery")
         if args.contextual_translation == "api":
+            vision_model = (
+                args.context_model or args.context_vision_model
+            )
             command.extend(
                 [
                     "--api-url",
                     args.context_api_url,
-                    "--model",
-                    args.context_model,
+                    "--text-model",
+                    args.context_text_model,
+                    "--vision-model",
+                    vision_model,
+                    "--glossary",
+                    str(args.context_glossary),
+                    "--visual-verify-threshold",
+                    str(args.context_visual_verify_threshold),
                     "--api-key-env",
                     args.context_api_key_env,
                     "--api-context-size",
