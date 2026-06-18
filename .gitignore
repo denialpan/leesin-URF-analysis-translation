@@ -31,6 +31,5 @@ contextual-translation/
 /training-data/*.hud-states.json
 /training-data/*smoke*.png
 /training-data/*full.png
-/rendericons
 
 /testtranslation
