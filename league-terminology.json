@@ -1,0 +1,45 @@
+{
+  "champions": {
+    "盲僧": "lee sin",
+    "李青": "lee sin",
+    "皇子": "jarvan",
+    "老鼠": "twitch",
+    "梦魇": "nocturne",
+    "瑞兹": "ryze"
+  },
+  "abilities_and_inputs": {
+    "Q": "Q",
+    "W": "W",
+    "E": "E",
+    "R": "R",
+    "A": "auto attack",
+    "平A": "auto attack",
+    "闪现": "flash",
+    "净化": "cleanse",
+    "摸眼": "ward hop",
+    "插眼": "place a ward",
+    "二段Q": "Q2",
+    "回音击": "Q2",
+    "天音波": "Q1",
+    "神龙摆尾": "dragon's rage",
+    "天雷破": "tempest",
+    "摧筋断骨": "cripple"
+  },
+  "items": {
+    "暗爪": "prowler's claw",
+    "火箭腰带": "rocketbelt"
+  },
+  "conversational_phrases": {
+    "有点东西": "has some skill / has some moves",
+    "秀": "style on / outplay / show off, depending on context",
+    "被秀了": "got outplayed",
+    "送他走": "send him packing / finish him",
+    "上西天": "send him straight to hell, used jokingly"
+  },
+  "guidance": [
+    "Use this glossary only when the Chinese audio supports the term.",
+    "Do not force League terminology into ordinary conversational speech.",
+    "Ability letters spoken aloud should remain separate, such as Q A E, unless the audio clearly forms another word.",
+    "Prefer the speaker's conversational intent over literal character-by-character translation."
+  ]
+}
