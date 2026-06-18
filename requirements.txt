@@ -3,7 +3,7 @@ faster-whisper
 joblib
 numpy
 Pillow
-scikit-learn
+scikit-learn>=1.9,<2.0
 yt-dlp
 
 # Optional GPU runtime packages used by faster-whisper on Windows/CUDA.

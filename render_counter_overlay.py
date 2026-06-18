@@ -12,9 +12,18 @@ from PIL import Image, ImageDraw, ImageFont
 DEFAULT_WIDTH = 320
 DEFAULT_HEIGHT = 240
 DEFAULT_FPS = 60.0
-DEFAULT_FONT = Path(r"C:\Windows\Fonts\arialbd.ttf")
 DEFAULT_FONT_SIZE = 128
 DEFAULT_TRANSITION_FRAMES = 6
+DEFAULT_FONT_CANDIDATES = [
+    Path(r"C:\Windows\Fonts\arialbd.ttf"),
+    Path(r"C:\Windows\Fonts\Arialbd.ttf"),
+    Path("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"),
+    Path("/usr/share/fonts/truetype/liberation2/LiberationSans-Bold.ttf"),
+    Path("/usr/share/fonts/truetype/freefont/FreeSansBold.ttf"),
+    Path("/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc"),
+    Path("/System/Library/Fonts/Supplemental/Arial Bold.ttf"),
+    Path("/Library/Fonts/Arial Bold.ttf"),
+]
 
 
 def load_events(path: Path, fps: float) -> tuple[list[dict[str, int]], int]:
@@ -153,6 +162,21 @@ def start_encoder(
     )
 
 
+def resolve_font(path: Path | None, size: int) -> ImageFont.ImageFont:
+    if path is not None:
+        if not path.is_file():
+            raise FileNotFoundError(f"Font not found: {path}")
+        return ImageFont.truetype(str(path), size)
+
+    for candidate in DEFAULT_FONT_CANDIDATES:
+        if candidate.is_file():
+            print(f"Using font: {candidate}")
+            return ImageFont.truetype(str(candidate), size)
+
+    print("No TrueType font found; using Pillow's default bitmap font.")
+    return ImageFont.load_default()
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Render a transparent, scrolling ProRes 4444 counter."
@@ -162,7 +186,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--width", type=int, default=DEFAULT_WIDTH)
     parser.add_argument("--height", type=int, default=DEFAULT_HEIGHT)
     parser.add_argument("--fps", type=float, default=DEFAULT_FPS)
-    parser.add_argument("--font", type=Path, default=DEFAULT_FONT)
+    parser.add_argument(
+        "--font",
+        type=Path,
+        help="Optional TrueType/OpenType font path. Auto-detected by default.",
+    )
     parser.add_argument("--font-size", type=int, default=DEFAULT_FONT_SIZE)
     parser.add_argument(
         "--transition-frames",
@@ -185,13 +213,11 @@ def main() -> None:
         raise ValueError("--fps must be greater than zero.")
     if args.transition_frames < 1:
         raise ValueError("--transition-frames must be at least one.")
-    if not args.font.is_file():
-        raise FileNotFoundError(f"Font not found: {args.font}")
 
     events, duration_frames = load_events(args.counter, args.fps)
     output = args.output or args.counter.with_suffix(".overlay.mov")
     output.parent.mkdir(parents=True, exist_ok=True)
-    font = ImageFont.truetype(str(args.font), args.font_size)
+    font = resolve_font(args.font, args.font_size)
     values = sorted({event["value"] for event in events})
     canvas_size = (args.width, args.height)
     text_images = {
