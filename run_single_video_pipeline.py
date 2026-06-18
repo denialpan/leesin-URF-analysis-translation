@@ -11,6 +11,8 @@ from pathlib import Path
 from run_video_batch_pipeline import (
     VIDEO_EXTENSIONS,
     console_text,
+    default_uvr_executable,
+    default_whisper_python,
     process_hud,
     process_transcription,
     validate_outputs,
@@ -64,6 +66,26 @@ def parse_args() -> argparse.Namespace:
         "--keep-vocals",
         action="store_true",
         help="Keep the isolated vocal WAV after transcription.",
+    )
+    parser.add_argument(
+        "--whisper-python",
+        type=Path,
+        default=default_whisper_python(),
+        help=(
+            "Python executable for the faster-whisper environment. Defaults "
+            "to .venv-whisperx/Scripts/python.exe on Windows and "
+            ".venv-whisperx/bin/python elsewhere."
+        ),
+    )
+    parser.add_argument(
+        "--uvr-executable",
+        type=Path,
+        default=default_uvr_executable(),
+        help=(
+            "audio-separator executable. Defaults to "
+            ".venv-audio-separator/Scripts/audio-separator.exe on Windows "
+            "and .venv-audio-separator/bin/audio-separator elsewhere."
+        ),
     )
     parser.add_argument(
         "--transcription-quality",
@@ -259,6 +281,7 @@ def main() -> None:
             )
         if args.context_no_audio_recovery:
             command.append("--no-audio-recovery")
+        command.extend(["--whisper-python", str(args.whisper_python.resolve())])
         if args.contextual_translation == "api":
             vision_model = (
                 args.context_model or args.context_vision_model

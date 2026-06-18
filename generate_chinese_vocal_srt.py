@@ -12,9 +12,6 @@ from pathlib import Path
 
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-UVR_EXECUTABLE = (
-    SCRIPT_DIR / ".venv-audio-separator" / "Scripts" / "audio-separator.exe"
-)
 UVR_MODEL_DIR = SCRIPT_DIR / "models" / "audio-separator"
 DEFAULT_UVR_MODEL = "UVR-MDX-NET-Inst_HQ_3.onnx"
 DEFAULT_HOTWORDS = "Q W E R A D F Q1 Q2 盲僧 李青 皇子 老鼠 暗爪 摸眼 天雷破 神龙摆尾"
@@ -38,6 +35,17 @@ LEAGUE_CONTEXT_CORRECTIONS = (
     ("能修的阵容", "能秀的阵容"),
 )
 DLL_DIRECTORY_HANDLES: list[object] = []
+
+
+def default_uvr_executable() -> Path:
+    if sys.platform == "win32":
+        return (
+            SCRIPT_DIR
+            / ".venv-audio-separator"
+            / "Scripts"
+            / "audio-separator.exe"
+        )
+    return SCRIPT_DIR / ".venv-audio-separator" / "bin" / "audio-separator"
 
 
 def parse_args() -> argparse.Namespace:
@@ -68,6 +76,16 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--uvr-model",
         default=DEFAULT_UVR_MODEL,
+    )
+    parser.add_argument(
+        "--uvr-executable",
+        type=Path,
+        default=default_uvr_executable(),
+        help=(
+            "audio-separator executable. Defaults to "
+            ".venv-audio-separator/Scripts/audio-separator.exe on Windows "
+            "and .venv-audio-separator/bin/audio-separator elsewhere."
+        ),
     )
     parser.add_argument(
         "--vad-min-silence-ms",
@@ -236,10 +254,15 @@ def extract_audio(video: Path, output: Path, duration: float) -> None:
         raise RuntimeError(stderr.strip() or "FFmpeg audio extraction failed.")
 
 
-def isolate_vocals(source_audio: Path, output_dir: Path, model: str) -> Path:
-    if not UVR_EXECUTABLE.is_file():
+def isolate_vocals(
+    source_audio: Path,
+    output_dir: Path,
+    model: str,
+    executable: Path,
+) -> Path:
+    if not executable.is_file():
         raise FileNotFoundError(
-            f"UVR CLI is missing: {UVR_EXECUTABLE}\n"
+            f"UVR CLI is missing: {executable}\n"
             "Create .venv-audio-separator and install audio-separator first."
         )
     model_path = UVR_MODEL_DIR / model
@@ -253,7 +276,7 @@ def isolate_vocals(source_audio: Path, output_dir: Path, model: str) -> Path:
     env["AUDIO_SEPARATOR_MODEL_DIR"] = str(UVR_MODEL_DIR)
     run(
         [
-            str(UVR_EXECUTABLE),
+            str(executable),
             str(source_audio),
             "--model_filename",
             model,
@@ -744,6 +767,7 @@ def main() -> None:
     srt_path = output_dir / f"{base}.uvr.whisperx.chinese.short.srt"
     debug_path = srt_path.with_suffix(".json")
     duration = probe_duration(video)
+    uvr_executable = args.uvr_executable.resolve()
 
     print(f"Video: {video}")
     print(f"Output: {output_dir}")
@@ -768,6 +792,7 @@ def main() -> None:
             source_audio,
             temporary_dir / "uvr",
             args.uvr_model,
+            uvr_executable,
         )
         if vocal_path.exists():
             vocal_path.unlink()

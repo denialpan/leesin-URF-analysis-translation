@@ -30,7 +30,6 @@ from pathlib import Path
 
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-WHISPER_PYTHON = SCRIPT_DIR / ".venv-whisperx" / "Scripts" / "python.exe"
 TEXT_SYSTEM_PROMPT = """You reconstruct and translate Chinese speech from League of Legends gameplay videos.
 
 Audio-derived Chinese is the primary evidence. Nearby dialogue and the supplied glossary are secondary evidence.
@@ -58,6 +57,12 @@ Return only JSON with:
 corrected_chinese, english, confidence, needs_review, decision, reasoning.
 decision must be "accept" or "revise". Keep reasoning brief.
 """
+
+
+def default_whisper_python() -> Path:
+    if os.name == "nt":
+        return SCRIPT_DIR / ".venv-whisperx" / "Scripts" / "python.exe"
+    return SCRIPT_DIR / ".venv-whisperx" / "bin" / "python"
 
 
 def parse_args() -> argparse.Namespace:
@@ -169,6 +174,16 @@ def parse_args() -> argparse.Namespace:
             "profiles and focused Chinese ASR."
         ),
     )
+    parser.add_argument(
+        "--whisper-python",
+        type=Path,
+        default=default_whisper_python(),
+        help=(
+            "Python executable for focused audio recovery. Defaults to "
+            ".venv-whisperx/Scripts/python.exe on Windows and "
+            ".venv-whisperx/bin/python elsewhere."
+        ),
+    )
     return parser.parse_args()
 
 
@@ -226,11 +241,12 @@ def recover_range_audio(
     output_dir: Path,
     range_start: float,
     range_end: float,
+    whisper_python: Path,
 ) -> dict[str, object] | None:
-    if not WHISPER_PYTHON.is_file():
+    if not whisper_python.is_file():
         print(
             f"No cues found and Whisper environment is missing: "
-            f"{WHISPER_PYTHON}"
+            f"{whisper_python}"
         )
         return None
 
@@ -238,7 +254,7 @@ def recover_range_audio(
         f"audio-recovery-{range_start:.3f}-{range_end:.3f}.json"
     )
     command = [
-        str(WHISPER_PYTHON),
+        str(whisper_python),
         str(SCRIPT_DIR / "recover_chinese_frame_range.py"),
         str(video),
         "--start",
@@ -1140,6 +1156,7 @@ def main() -> None:
         else artifact_root / "contextual-translation"
     )
     output_dir.mkdir(parents=True, exist_ok=True)
+    whisper_python = args.whisper_python.resolve()
     duration = probe_duration(video)
     source_fps = probe_frame_rate(video)
     range_start = (
@@ -1174,6 +1191,7 @@ def main() -> None:
                 output_dir,
                 range_start,
                 range_end,
+                whisper_python,
             )
     jobs = build_jobs(
         video,

@@ -13,9 +13,23 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 VIDEO_EXTENSIONS = {".mp4", ".mov", ".mkv", ".webm"}
-WHISPER_PYTHON = (
-    SCRIPT_DIR / ".venv-whisperx" / "Scripts" / "python.exe"
-)
+
+
+def default_whisper_python() -> Path:
+    if sys.platform == "win32":
+        return SCRIPT_DIR / ".venv-whisperx" / "Scripts" / "python.exe"
+    return SCRIPT_DIR / ".venv-whisperx" / "bin" / "python"
+
+
+def default_uvr_executable() -> Path:
+    if sys.platform == "win32":
+        return (
+            SCRIPT_DIR
+            / ".venv-audio-separator"
+            / "Scripts"
+            / "audio-separator.exe"
+        )
+    return SCRIPT_DIR / ".venv-audio-separator" / "bin" / "audio-separator"
 
 
 def parse_args() -> argparse.Namespace:
@@ -97,6 +111,26 @@ def parse_args() -> argparse.Namespace:
         "--force-transcription",
         action="store_true",
         help="Regenerate Chinese transcription instead of reusing it.",
+    )
+    parser.add_argument(
+        "--whisper-python",
+        type=Path,
+        default=default_whisper_python(),
+        help=(
+            "Python executable for the faster-whisper environment. Defaults "
+            "to .venv-whisperx/Scripts/python.exe on Windows and "
+            ".venv-whisperx/bin/python elsewhere."
+        ),
+    )
+    parser.add_argument(
+        "--uvr-executable",
+        type=Path,
+        default=default_uvr_executable(),
+        help=(
+            "audio-separator executable. Defaults to "
+            ".venv-audio-separator/Scripts/audio-separator.exe on Windows "
+            "and .venv-audio-separator/bin/audio-separator elsewhere."
+        ),
     )
     parser.add_argument(
         "--keep-vocals",
@@ -413,16 +447,19 @@ def process_transcription(
     if complete and not force_transcription:
         print("  Reusing Chinese SRT and isolated vocals")
         return
-    if not WHISPER_PYTHON.is_file():
+    whisper_python = args.whisper_python.resolve()
+    if not whisper_python.is_file():
         raise FileNotFoundError(
-            f"WhisperX Python environment not found: {WHISPER_PYTHON}"
+            f"WhisperX Python environment not found: {whisper_python}"
         )
     command = [
-        str(WHISPER_PYTHON),
+        str(whisper_python),
         str(SCRIPT_DIR / "generate_chinese_vocal_srt.py"),
         str(video),
         "--output-dir",
         str(output_dir),
+        "--uvr-executable",
+        str(args.uvr_executable.resolve()),
     ]
     if getattr(args, "transcription_quality", "standard") == "high":
         command.extend(
@@ -473,6 +510,7 @@ def process_contextual_translation(
         )
     if args.context_no_audio_recovery:
         command.append("--no-audio-recovery")
+    command.extend(["--whisper-python", str(args.whisper_python.resolve())])
     if args.contextual_translation == "api":
         vision_model = args.context_model or args.context_vision_model
         command.extend(
