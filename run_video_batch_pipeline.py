@@ -36,6 +36,16 @@ def parse_args() -> argparse.Namespace:
         default=Path("downloads/new"),
     )
     parser.add_argument(
+        "--old",
+        action="store_true",
+        help="Process videos from --old-dir.",
+    )
+    parser.add_argument(
+        "--new",
+        action="store_true",
+        help="Process videos from --new-dir.",
+    )
+    parser.add_argument(
         "--sample-fps",
         type=float,
         default=60.0,
@@ -58,7 +68,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--force",
         action="store_true",
-        help="Regenerate outputs even when the destination file exists.",
+        help=(
+            "Regenerate HUD-derived artifacts. Transcription and contextual "
+            "translation still reuse completed outputs unless their own force "
+            "flags are passed."
+        ),
     )
     parser.add_argument(
         "--skip-hud",
@@ -71,9 +85,87 @@ def parse_args() -> argparse.Namespace:
         help="Skip UVR vocal isolation and Chinese transcription.",
     )
     parser.add_argument(
+        "--transcription-quality",
+        choices=("standard", "high"),
+        default="high",
+        help=(
+            "High uses more aggressive confidence checks and wider raw-audio "
+            "context for questionable Chinese cues."
+        ),
+    )
+    parser.add_argument(
+        "--force-transcription",
+        action="store_true",
+        help="Regenerate Chinese transcription instead of reusing it.",
+    )
+    parser.add_argument(
         "--keep-vocals",
         action="store_true",
         help="Keep each isolated vocal WAV after Chinese transcription.",
+    )
+    parser.add_argument(
+        "--contextual-translation",
+        choices=("off", "bundle", "api"),
+        default="off",
+        help=(
+            "Build contextual translation jobs, or submit them to an "
+            "OpenAI-compatible endpoint."
+        ),
+    )
+    parser.add_argument("--context-api-url")
+    parser.add_argument(
+        "--context-model",
+        help="Legacy alias for --context-vision-model.",
+    )
+    parser.add_argument(
+        "--context-text-model",
+        default="qwen2.5:14b",
+    )
+    parser.add_argument(
+        "--context-vision-model",
+        default="qwen2.5vl:7b",
+    )
+    parser.add_argument(
+        "--context-glossary",
+        type=Path,
+        default=SCRIPT_DIR / "league-terminology.json",
+    )
+    parser.add_argument(
+        "--context-visual-verify-threshold",
+        type=float,
+        default=0.78,
+    )
+    parser.add_argument(
+        "--context-api-key-env",
+        default="OPENAI_API_KEY",
+    )
+    parser.add_argument("--context-api-context-size", type=int, default=8192)
+    parser.add_argument("--context-request-timeout", type=float, default=600.0)
+    parser.add_argument("--context-retries", type=int, default=2)
+    parser.add_argument(
+        "--context-force-results",
+        action="store_true",
+        help="Discard and regenerate completed contextual API results.",
+    )
+    parser.add_argument("--context-start-cue", type=int, default=1)
+    parser.add_argument("--context-end-cue", type=int)
+    parser.add_argument(
+        "--context-start-frame",
+        type=int,
+        help="Inclusive source-video frame where contextual translation begins.",
+    )
+    parser.add_argument(
+        "--context-end-frame",
+        type=int,
+        help="Inclusive source-video frame where contextual translation ends.",
+    )
+    parser.add_argument(
+        "--context-no-audio-recovery",
+        action="store_true",
+        help=(
+            "Do not retry empty frame ranges using multiple audio-volume "
+            "profiles and focused Chinese ASR."
+        ),
     )
     parser.add_argument(
         "--stop-on-error",
@@ -160,6 +252,7 @@ def process_hud(
     args: argparse.Namespace,
 ) -> None:
     paths = hud_paths(output_dir)
+    force_hud_artifacts = getattr(args, "force_hud_artifacts", args.force)
     if style == "old":
         models = SCRIPT_DIR / "training-data" / "hud-state-models.joblib"
         excluded_region = "rocketbelt"
@@ -186,7 +279,7 @@ def process_hud(
         )
 
     python = sys.executable
-    states_changed = should_run(paths["states"], args.force)
+    states_changed = should_run(paths["states"], force_hud_artifacts)
     if states_changed:
         run_command(
             "Analyze HUD states",
@@ -215,7 +308,7 @@ def process_hud(
         print("  Reusing hud-states.json")
 
     counter_changed = (
-        states_changed or should_run(paths["counter"], args.force)
+        states_changed or should_run(paths["counter"], force_hud_artifacts)
     )
     if counter_changed:
         run_command(
@@ -235,7 +328,7 @@ def process_hud(
         print("  Reusing counter.json")
 
     keystrokes_changed = (
-        states_changed or should_run(paths["keystrokes"], args.force)
+        states_changed or should_run(paths["keystrokes"], force_hud_artifacts)
     )
     if keystrokes_changed:
         run_command(
@@ -256,7 +349,9 @@ def process_hud(
     else:
         print("  Reusing keystrokes.json")
 
-    if counter_changed or should_run(paths["counter_overlay"], args.force):
+    if counter_changed or should_run(
+        paths["counter_overlay"], force_hud_artifacts
+    ):
         run_command(
             "Render counter overlay",
             [
@@ -274,7 +369,7 @@ def process_hud(
         print("  Reusing counter.overlay.mov")
 
     if keystrokes_changed or should_run(
-        paths["keystroke_overlay"], args.force
+        paths["keystroke_overlay"], force_hud_artifacts
     ):
         run_command(
             "Render keystroke overlay",
@@ -314,7 +409,8 @@ def process_transcription(
     if args.keep_vocals:
         required.append(paths["vocals"])
     complete = all(path.is_file() for path in required)
-    if complete and not args.force:
+    force_transcription = getattr(args, "force_transcription", args.force)
+    if complete and not force_transcription:
         print("  Reusing Chinese SRT and isolated vocals")
         return
     if not WHISPER_PYTHON.is_file():
@@ -348,6 +444,70 @@ def process_transcription(
     )
 
 
+def process_contextual_translation(
+    video: Path,
+    output_dir: Path,
+    args: argparse.Namespace,
+) -> None:
+    command = [
+        sys.executable,
+        str(SCRIPT_DIR / "generate_contextual_translation.py"),
+        str(video),
+        "--output-dir",
+        str(output_dir / "contextual-translation"),
+        "--provider",
+        args.contextual_translation,
+        "--start-cue",
+        str(args.context_start_cue),
+    ]
+    if args.context_end_cue is not None:
+        command.extend(["--end-cue", str(args.context_end_cue)])
+    if args.context_start_frame is not None:
+        command.extend(
+            [
+                "--start-frame",
+                str(args.context_start_frame),
+                "--end-frame",
+                str(args.context_end_frame),
+            ]
+        )
+    if args.context_no_audio_recovery:
+        command.append("--no-audio-recovery")
+    if args.contextual_translation == "api":
+        vision_model = args.context_model or args.context_vision_model
+        command.extend(
+            [
+                "--api-url",
+                args.context_api_url,
+                "--text-model",
+                args.context_text_model,
+                "--vision-model",
+                vision_model,
+                "--glossary",
+                str(args.context_glossary),
+                "--visual-verify-threshold",
+                str(args.context_visual_verify_threshold),
+                "--api-key-env",
+                args.context_api_key_env,
+                "--api-context-size",
+                str(args.context_api_context_size),
+                "--request-timeout",
+                str(args.context_request_timeout),
+                "--retries",
+                str(args.context_retries),
+            ]
+        )
+    if args.force:
+        command.append("--force-frames")
+    if args.context_force_results:
+        command.append("--force-results")
+    run_command(
+        "Build contextual gameplay translation",
+        command,
+        args.dry_run,
+    )
+
+
 def validate_outputs(
     video: Path,
     output_dir: Path,
@@ -366,6 +526,11 @@ def validate_outputs(
 
 def main() -> None:
     args = parse_args()
+    args.force_hud_artifacts = True
+    if not args.old and not args.new:
+        raise ValueError(
+            "No video style selected. Pass --old, --new, or both."
+        )
     if args.sample_fps <= 0:
         raise ValueError("--sample-fps must be greater than zero.")
     if args.stable_frames < 1:
@@ -374,15 +539,60 @@ def main() -> None:
         raise ValueError("--recast-timeout must be greater than zero.")
     if args.limit is not None and args.limit < 1:
         raise ValueError("--limit must be at least one.")
+    if args.context_request_timeout <= 0:
+        raise ValueError("--context-request-timeout must be greater than zero.")
+    if args.context_retries < 0:
+        raise ValueError("--context-retries cannot be negative.")
+    if not 0 <= args.context_visual_verify_threshold <= 1:
+        raise ValueError(
+            "--context-visual-verify-threshold must be between zero and one."
+        )
+    if (
+        args.contextual_translation != "off"
+        and not args.context_glossary.resolve().is_file()
+    ):
+        raise FileNotFoundError(
+            f"League glossary not found: {args.context_glossary.resolve()}"
+        )
+    if (args.context_start_frame is None) != (
+        args.context_end_frame is None
+    ):
+        raise ValueError(
+            "--context-start-frame and --context-end-frame must be "
+            "provided together."
+        )
+    if args.context_start_frame is not None:
+        if args.context_start_frame < 0:
+            raise ValueError("--context-start-frame cannot be negative.")
+        if args.context_end_frame < args.context_start_frame:
+            raise ValueError(
+                "--context-end-frame cannot precede --context-start-frame."
+            )
+    if (
+        args.skip_hud
+        and args.skip_transcription
+        and args.contextual_translation == "off"
+    ):
+        raise ValueError(
+            "--skip-hud and --skip-transcription require "
+            "--contextual-translation bundle or api."
+        )
+    if args.contextual_translation == "api" and not args.context_api_url:
+        raise ValueError(
+            "API contextual translation requires --context-api-url."
+        )
 
-    jobs = [
-        ("old", video)
-        for video in discover_videos(absolute(args.old_dir))
-    ]
-    jobs.extend(
-        ("new", video)
-        for video in discover_videos(absolute(args.new_dir))
-    )
+    jobs: list[tuple[str, Path]] = []
+    if args.old:
+        jobs.extend(
+            ("old", video)
+            for video in discover_videos(absolute(args.old_dir))
+        )
+    if args.new:
+        jobs.extend(
+            ("new", video)
+            for video in discover_videos(absolute(args.new_dir))
+        )
     if args.limit is not None:
         jobs = jobs[: args.limit]
     if not jobs:
@@ -412,6 +622,8 @@ def main() -> None:
                 process_hud(video, output_dir, style, args)
             if not args.skip_transcription:
                 process_transcription(video, output_dir, args)
+            if args.contextual_translation != "off":
+                process_contextual_translation(video, output_dir, args)
             missing = (
                 []
                 if args.dry_run
