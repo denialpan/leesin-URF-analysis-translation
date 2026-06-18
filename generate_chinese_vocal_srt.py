@@ -330,8 +330,15 @@ def load_whisper_model(
     try:
         from faster_whisper import WhisperModel
     except ImportError as error:
+        default_python = (
+            SCRIPT_DIR / ".venv-whisperx" / "Scripts" / "python.exe"
+            if sys.platform == "win32"
+            else SCRIPT_DIR / ".venv-whisperx" / "bin" / "python"
+        )
         raise RuntimeError(
-            "Run this script with .venv-whisperx\\Scripts\\python.exe."
+            "faster-whisper is not installed in the Python environment "
+            f"running this script: {sys.executable}\n"
+            f"Install it with: {default_python} -m pip install faster-whisper"
         ) from error
 
     register_nvidia_dll_directories()
