@@ -1,0 +1,16 @@
+audio-separator
+faster-whisper
+joblib
+numpy
+Pillow
+scikit-learn
+yt-dlp
+
+# Optional GPU runtime packages used by faster-whisper on Windows/CUDA.
+# Install these in the Whisper/audio environment when CUDA DLL loading fails.
+nvidia-cublas-cu12; platform_system == "Windows"
+nvidia-cudnn-cu12; platform_system == "Windows"
+
+# External tools required on PATH, not installed by pip:
+# - ffmpeg / ffprobe
+# - Ollama, for local Qwen contextual translation
