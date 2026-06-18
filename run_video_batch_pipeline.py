@@ -134,9 +134,8 @@ def parse_args() -> argparse.Namespace:
         "--force",
         action="store_true",
         help=(
-            "Regenerate HUD-derived artifacts. Transcription and contextual "
-            "translation still reuse completed outputs unless their own force "
-            "flags are passed."
+            "Regenerate HUD-derived artifacts. Omit this for resumable batch "
+            "runs that reuse completed HUD states, timelines, and overlays."
         ),
     )
     parser.add_argument(
@@ -619,7 +618,6 @@ def validate_outputs(
 
 def main() -> None:
     args = parse_args()
-    args.force_hud_artifacts = True
     if not args.old and not args.new:
         raise ValueError(
             "No video style selected. Pass --old, --new, or both."
