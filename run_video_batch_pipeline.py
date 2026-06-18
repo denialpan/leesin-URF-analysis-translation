@@ -21,6 +21,57 @@ def default_whisper_python() -> Path:
     return SCRIPT_DIR / ".venv-whisperx" / "bin" / "python"
 
 
+def python_can_import(python: Path, module: str) -> bool:
+    if not python.is_file():
+        return False
+    result = subprocess.run(
+        [str(python), "-c", f"import {module}"],
+        cwd=SCRIPT_DIR,
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+        check=False,
+    )
+    return result.returncode == 0
+
+
+def resolve_whisper_python(
+    explicit: Path | None,
+    require_import: bool = True,
+) -> Path:
+    if explicit is not None:
+        candidate = explicit.resolve()
+        if not candidate.is_file():
+            raise FileNotFoundError(
+                f"Whisper Python executable not found: {candidate}"
+            )
+        if require_import and not python_can_import(candidate, "faster_whisper"):
+            raise RuntimeError(
+                "Selected Whisper Python cannot import faster_whisper: "
+                f"{candidate}\n"
+                f"Install it with: {candidate} -m pip install faster-whisper"
+            )
+        return candidate
+
+    candidates = [
+        default_whisper_python().resolve(),
+        Path(sys.executable).resolve(),
+    ]
+    for candidate in candidates:
+        if require_import:
+            if python_can_import(candidate, "faster_whisper"):
+                return candidate
+        elif candidate.is_file():
+            return candidate
+
+    default_candidate = candidates[0]
+    raise RuntimeError(
+        "No usable Whisper Python environment was found. Tried:\n"
+        + "\n".join(f"  - {candidate}" for candidate in candidates)
+        + "\nCreate the default env or pass --whisper-python explicitly.\n"
+        f"Install with: {default_candidate} -m pip install faster-whisper"
+    )
+
+
 def default_uvr_executable() -> Path:
     if sys.platform == "win32":
         return (
@@ -115,11 +166,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--whisper-python",
         type=Path,
-        default=default_whisper_python(),
+        default=None,
         help=(
             "Python executable for the faster-whisper environment. Defaults "
-            "to .venv-whisperx/Scripts/python.exe on Windows and "
-            ".venv-whisperx/bin/python elsewhere."
+            "to .venv-whisperx/Scripts/python.exe on Windows, "
+            ".venv-whisperx/bin/python elsewhere, or the active Python if it "
+            "can import faster_whisper."
         ),
     )
     parser.add_argument(
@@ -447,11 +499,10 @@ def process_transcription(
     if complete and not force_transcription:
         print("  Reusing Chinese SRT and isolated vocals")
         return
-    whisper_python = args.whisper_python.resolve()
-    if not whisper_python.is_file():
-        raise FileNotFoundError(
-            f"WhisperX Python environment not found: {whisper_python}"
-        )
+    whisper_python = resolve_whisper_python(
+        args.whisper_python,
+        require_import=not args.dry_run,
+    )
     command = [
         str(whisper_python),
         str(SCRIPT_DIR / "generate_chinese_vocal_srt.py"),
@@ -510,7 +561,11 @@ def process_contextual_translation(
         )
     if args.context_no_audio_recovery:
         command.append("--no-audio-recovery")
-    command.extend(["--whisper-python", str(args.whisper_python.resolve())])
+    whisper_python = resolve_whisper_python(
+        args.whisper_python,
+        require_import=not args.dry_run,
+    )
+    command.extend(["--whisper-python", str(whisper_python)])
     if args.contextual_translation == "api":
         vision_model = args.context_model or args.context_vision_model
         command.extend(

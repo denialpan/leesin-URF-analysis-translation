@@ -12,9 +12,9 @@ from run_video_batch_pipeline import (
     VIDEO_EXTENSIONS,
     console_text,
     default_uvr_executable,
-    default_whisper_python,
     process_hud,
     process_transcription,
+    resolve_whisper_python,
     validate_outputs,
 )
 
@@ -70,11 +70,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--whisper-python",
         type=Path,
-        default=default_whisper_python(),
+        default=None,
         help=(
             "Python executable for the faster-whisper environment. Defaults "
-            "to .venv-whisperx/Scripts/python.exe on Windows and "
-            ".venv-whisperx/bin/python elsewhere."
+            "to .venv-whisperx/Scripts/python.exe on Windows, "
+            ".venv-whisperx/bin/python elsewhere, or the active Python if it "
+            "can import faster_whisper."
         ),
     )
     parser.add_argument(
@@ -281,7 +282,11 @@ def main() -> None:
             )
         if args.context_no_audio_recovery:
             command.append("--no-audio-recovery")
-        command.extend(["--whisper-python", str(args.whisper_python.resolve())])
+        whisper_python = resolve_whisper_python(
+            args.whisper_python,
+            require_import=not args.dry_run,
+        )
+        command.extend(["--whisper-python", str(whisper_python)])
         if args.contextual_translation == "api":
             vision_model = (
                 args.context_model or args.context_vision_model
