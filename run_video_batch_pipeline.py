@@ -141,13 +141,13 @@ def parse_args() -> argparse.Namespace:
         dest="include_ward",
         action="store_true",
         default=True,
-        help="Include ward events in the keystroke history.",
+        help="Include ward and cward events in the keystroke history.",
     )
     ward_group.add_argument(
         "--no-ward",
         dest="include_ward",
         action="store_false",
-        help="Omit ward events from the keystroke history overlay.",
+        help="Omit ward and cward events from the keystroke history overlay.",
     )
     parser.add_argument(
         "--force",
@@ -450,6 +450,7 @@ def process_hud(
         ]
         if not args.include_ward:
             keystroke_command.extend(["--exclude-key", "ward"])
+            keystroke_command.extend(["--exclude-key", "cward"])
         run_command(
             "Generate keystroke history",
             keystroke_command,

@@ -56,6 +56,16 @@
     },
     "validation_accuracy": 0.9629629629629629
   },
+  "cward": {
+    "samples": 117,
+    "labels": {
+      "cooldown": 30,
+      "disabled": 17,
+      "missing": 34,
+      "ready": 36
+    },
+    "validation_accuracy": 1.0
+  },
   "rocketbelt": {
     "samples": 55,
     "labels": {

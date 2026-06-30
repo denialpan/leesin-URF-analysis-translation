@@ -35,6 +35,7 @@ ICON_SETS = {
         "R": "R_old.png",
         "W": "W_old.png",
         "ward": ["ward_old.png", "ward.png"],
+        "cward": ["cward_old.png", "cward.png"],
     },
     "new": {
         **COMMON_ICON_FILENAMES,
@@ -44,6 +45,7 @@ ICON_SETS = {
         "R": "R.png",
         "W": "W.png",
         "ward": "ward.png",
+        "cward": "cward.png",
     },
 }
 

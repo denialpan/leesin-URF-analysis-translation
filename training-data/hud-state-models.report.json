@@ -59,6 +59,16 @@
     },
     "validation_accuracy": 1.0
   },
+  "cward": {
+    "samples": 148,
+    "labels": {
+      "cooldown": 31,
+      "disabled": 37,
+      "missing": 32,
+      "ready": 48
+    },
+    "validation_accuracy": 1.0
+  },
   "prowler": {
     "samples": 90,
     "labels": {

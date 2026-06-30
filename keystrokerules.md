@@ -27,3 +27,6 @@ assume that for each group, it is intended for the associated region, then its s
 
 "ward":
   - "ward": "ready" -> "cooldown"
+
+"cward":
+  - "cward": "ready" -> "cooldown"
