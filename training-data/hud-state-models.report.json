@@ -68,5 +68,23 @@
       "ready": 29
     },
     "validation_accuracy": 1.0
+  },
+  "rocketbelt": {
+    "samples": 22,
+    "labels": {
+      "cooldown": 4,
+      "disabled": 9,
+      "ready": 9
+    },
+    "validation_accuracy": 1.0
+  },
+  "ward": {
+    "samples": 180,
+    "labels": {
+      "cooldown": 110,
+      "disabled": 5,
+      "ready": 65
+    },
+    "validation_accuracy": 1.0
   }
 }

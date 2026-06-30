@@ -13958,6 +13958,2706 @@
         "width": 40,
         "height": 39
       }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 0,
+      "timestamp": 0.0,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000000.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 1,
+      "timestamp": 0.016666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000001.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2,
+      "timestamp": 0.033333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000002.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 3,
+      "timestamp": 0.05,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000003.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 879,
+      "timestamp": 14.65,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000879.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 880,
+      "timestamp": 14.666666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000880.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 881,
+      "timestamp": 14.683333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000881.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 882,
+      "timestamp": 14.7,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000882.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 902,
+      "timestamp": 15.033333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000902.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 922,
+      "timestamp": 15.366666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000922.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 942,
+      "timestamp": 15.7,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000942.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 946,
+      "timestamp": 15.766666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000946.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 950,
+      "timestamp": 15.833333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000950.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 951,
+      "timestamp": 15.85,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000951.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 952,
+      "timestamp": 15.866666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000952.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 953,
+      "timestamp": 15.883333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000953.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 954,
+      "timestamp": 15.9,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000954.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 955,
+      "timestamp": 15.916666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000955.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 956,
+      "timestamp": 15.933333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000956.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 957,
+      "timestamp": 15.95,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000957.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 958,
+      "timestamp": 15.966666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000958.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 959,
+      "timestamp": 15.983333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000959.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 960,
+      "timestamp": 16.0,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000960.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 961,
+      "timestamp": 16.016666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000961.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 962,
+      "timestamp": 16.033333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000962.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 963,
+      "timestamp": 16.05,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000963.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 964,
+      "timestamp": 16.066666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000964.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 965,
+      "timestamp": 16.083333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000965.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 966,
+      "timestamp": 16.1,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000966.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 967,
+      "timestamp": 16.116666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000967.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 968,
+      "timestamp": 16.133333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000968.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 969,
+      "timestamp": 16.15,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000969.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 970,
+      "timestamp": 16.166666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000970.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 971,
+      "timestamp": 16.183333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000971.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 972,
+      "timestamp": 16.2,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000972.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 973,
+      "timestamp": 16.216666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000973.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 974,
+      "timestamp": 16.233333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000974.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 975,
+      "timestamp": 16.25,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000975.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 976,
+      "timestamp": 16.266666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000976.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 977,
+      "timestamp": 16.283333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000977.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 978,
+      "timestamp": 16.3,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000978.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 979,
+      "timestamp": 16.316666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00000979.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 1980,
+      "timestamp": 33.0,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00001980.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 1981,
+      "timestamp": 33.016666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00001981.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 1982,
+      "timestamp": 33.033333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00001982.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 1983,
+      "timestamp": 33.05,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00001983.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2000,
+      "timestamp": 33.333333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002000.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2017,
+      "timestamp": 33.616666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002017.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2034,
+      "timestamp": 33.9,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002034.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2051,
+      "timestamp": 34.183333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002051.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2068,
+      "timestamp": 34.466666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002068.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2085,
+      "timestamp": 34.75,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002085.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2102,
+      "timestamp": 35.033333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002102.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2119,
+      "timestamp": 35.316666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002119.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2136,
+      "timestamp": 35.6,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002136.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2153,
+      "timestamp": 35.883333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002153.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2170,
+      "timestamp": 36.166666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002170.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2187,
+      "timestamp": 36.45,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002187.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2204,
+      "timestamp": 36.733333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002204.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2221,
+      "timestamp": 37.016666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002221.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2238,
+      "timestamp": 37.3,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002238.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2255,
+      "timestamp": 37.583333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002255.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2272,
+      "timestamp": 37.866666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002272.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2289,
+      "timestamp": 38.15,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002289.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2306,
+      "timestamp": 38.433333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002306.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2323,
+      "timestamp": 38.716666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002323.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2340,
+      "timestamp": 39.0,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002340.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2357,
+      "timestamp": 39.283333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002357.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2391,
+      "timestamp": 39.85,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002391.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2425,
+      "timestamp": 40.416666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002425.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2459,
+      "timestamp": 40.983333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002459.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2493,
+      "timestamp": 41.55,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002493.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2527,
+      "timestamp": 42.116666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002527.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2561,
+      "timestamp": 42.683333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002561.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2595,
+      "timestamp": 43.25,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002595.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2629,
+      "timestamp": 43.816666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002629.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2663,
+      "timestamp": 44.383333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002663.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2697,
+      "timestamp": 44.95,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002697.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2731,
+      "timestamp": 45.516666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002731.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2765,
+      "timestamp": 46.083333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002765.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2799,
+      "timestamp": 46.65,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002799.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2833,
+      "timestamp": 47.216666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002833.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2867,
+      "timestamp": 47.783333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002867.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2901,
+      "timestamp": 48.35,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002901.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2935,
+      "timestamp": 48.916666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002935.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 2969,
+      "timestamp": 49.483333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00002969.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 3003,
+      "timestamp": 50.05,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00003003.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 3037,
+      "timestamp": 50.616666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00003037.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 3071,
+      "timestamp": 51.183333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00003071.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 3105,
+      "timestamp": 51.75,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00003105.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 3139,
+      "timestamp": 52.316666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00003139.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 3173,
+      "timestamp": 52.883333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00003173.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 3207,
+      "timestamp": 53.45,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00003207.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 3241,
+      "timestamp": 54.016666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00003241.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 3275,
+      "timestamp": 54.583333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00003275.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 3309,
+      "timestamp": 55.15,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00003309.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 3343,
+      "timestamp": 55.716666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00003343.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 3377,
+      "timestamp": 56.283333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00003377.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 3411,
+      "timestamp": 56.85,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00003411.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 3445,
+      "timestamp": 57.416666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00003445.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 3479,
+      "timestamp": 57.983333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00003479.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 3513,
+      "timestamp": 58.55,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00003513.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 3547,
+      "timestamp": 59.116666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00003547.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 3581,
+      "timestamp": 59.683333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00003581.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 3615,
+      "timestamp": 60.25,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00003615.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 3649,
+      "timestamp": 60.816666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00003649.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 3683,
+      "timestamp": 61.383333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00003683.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 3717,
+      "timestamp": 61.95,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00003717.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 3751,
+      "timestamp": 62.516666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00003751.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 3785,
+      "timestamp": 63.083333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00003785.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 3819,
+      "timestamp": 63.65,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00003819.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 3853,
+      "timestamp": 64.216666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00003853.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 3887,
+      "timestamp": 64.783333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00003887.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 3921,
+      "timestamp": 65.35,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00003921.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 3955,
+      "timestamp": 65.916666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00003955.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 3989,
+      "timestamp": 66.483333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00003989.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 4023,
+      "timestamp": 67.05,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00004023.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 4057,
+      "timestamp": 67.616666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00004057.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 4091,
+      "timestamp": 68.183333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00004091.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 4125,
+      "timestamp": 68.75,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00004125.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 4159,
+      "timestamp": 69.316666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00004159.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 4193,
+      "timestamp": 69.883333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00004193.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 4227,
+      "timestamp": 70.45,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00004227.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 4261,
+      "timestamp": 71.016666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "disabled",
+      "crop": "images/ward/disabled/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00004261.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 4295,
+      "timestamp": 71.583333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "disabled",
+      "crop": "images/ward/disabled/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00004295.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 4329,
+      "timestamp": 72.15,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "disabled",
+      "crop": "images/ward/disabled/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00004329.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 4363,
+      "timestamp": 72.716666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00004363.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 4397,
+      "timestamp": 73.283333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00004397.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 4431,
+      "timestamp": 73.85,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00004431.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 4465,
+      "timestamp": 74.416666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00004465.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 4499,
+      "timestamp": 74.983333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00004499.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 4533,
+      "timestamp": 75.55,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00004533.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 4567,
+      "timestamp": 76.116666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00004567.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 4601,
+      "timestamp": 76.683333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00004601.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 4635,
+      "timestamp": 77.25,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00004635.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 4669,
+      "timestamp": 77.816666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00004669.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 4703,
+      "timestamp": 78.383333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00004703.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 4737,
+      "timestamp": 78.95,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00004737.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 4771,
+      "timestamp": 79.516666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00004771.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 4805,
+      "timestamp": 80.083333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00004805.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 4839,
+      "timestamp": 80.65,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00004839.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 4873,
+      "timestamp": 81.216666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00004873.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 4907,
+      "timestamp": 81.783333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00004907.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 4941,
+      "timestamp": 82.35,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00004941.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 4975,
+      "timestamp": 82.916666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00004975.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 5009,
+      "timestamp": 83.483333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00005009.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 5043,
+      "timestamp": 84.05,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00005043.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 5077,
+      "timestamp": 84.616666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00005077.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 5111,
+      "timestamp": 85.183333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00005111.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 5145,
+      "timestamp": 85.75,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00005145.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 5179,
+      "timestamp": 86.316666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00005179.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 5213,
+      "timestamp": 86.883333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00005213.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 5247,
+      "timestamp": 87.45,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00005247.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 5281,
+      "timestamp": 88.016666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00005281.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 5315,
+      "timestamp": 88.583333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00005315.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 5349,
+      "timestamp": 89.15,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00005349.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 5383,
+      "timestamp": 89.716666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00005383.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 5417,
+      "timestamp": 90.283333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00005417.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 5451,
+      "timestamp": 90.85,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00005451.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 5485,
+      "timestamp": 91.416666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00005485.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 5519,
+      "timestamp": 91.983333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00005519.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 5553,
+      "timestamp": 92.55,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00005553.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 5587,
+      "timestamp": 93.116666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00005587.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 5621,
+      "timestamp": 93.683333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00005621.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 5655,
+      "timestamp": 94.25,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00005655.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 5689,
+      "timestamp": 94.816666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00005689.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 5723,
+      "timestamp": 95.383333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00005723.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 5757,
+      "timestamp": 95.95,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00005757.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 5791,
+      "timestamp": 96.516666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00005791.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 5825,
+      "timestamp": 97.083333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00005825.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 5859,
+      "timestamp": 97.65,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00005859.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 5893,
+      "timestamp": 98.216666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00005893.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 5927,
+      "timestamp": 98.783333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00005927.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 5961,
+      "timestamp": 99.35,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00005961.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 5995,
+      "timestamp": 99.916666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00005995.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 6029,
+      "timestamp": 100.483333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00006029.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 6063,
+      "timestamp": 101.05,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "cooldown",
+      "crop": "images/ward/cooldown/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00006063.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 7435,
+      "timestamp": 123.916666667,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "disabled",
+      "crop": "images/ward/disabled/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00007435.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF GOD [youtu.be_xajTLMazH_w].mp4",
+      "frame": 7469,
+      "timestamp": 124.483333333,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "ready",
+      "crop": "images/ward/ready/This_Lee_Sin_is_an_URF_GOD__youtu.be_xajTLMazH_w_83f028a801_frame_00007469.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\new\\!completed Best Lee Sin URF \uff5c Nanshen LeeSin [youtu.be_Ipno0bK5lvI].mp4",
+      "frame": 648,
+      "timestamp": 10.8,
+      "fps": 60.0,
+      "region": "ward",
+      "label": "disabled",
+      "crop": "images/ward/disabled/completed_Best_Lee_Sin_URF___Nanshen_LeeSin__youtu.be_Ipno0b_0166ae3325_frame_00000648.png",
+      "region_box": {
+        "x": 1170,
+        "y": 995,
+        "width": 23,
+        "height": 22
+      }
     }
   ]
 }
