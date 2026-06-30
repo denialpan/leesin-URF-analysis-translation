@@ -24,3 +24,6 @@ assume that for each group, it is intended for the associated region, then its s
 
 "rocketbelt":
   - "rocketbelt": "ready" -> "cooldown"
+
+"ward":
+  - "ward": "ready" -> "cooldown"

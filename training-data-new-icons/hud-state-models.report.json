@@ -65,5 +65,14 @@
       "ready": 6
     },
     "validation_accuracy": 1.0
+  },
+  "ward": {
+    "samples": 627,
+    "labels": {
+      "cooldown": 143,
+      "disabled": 316,
+      "ready": 168
+    },
+    "validation_accuracy": 0.9617834394904459
   }
 }

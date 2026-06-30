@@ -34,6 +34,7 @@ ICON_SETS = {
         "Q2": "Q_old_recast.png",
         "R": "R_old.png",
         "W": "W_old.png",
+        "ward": ["ward_old.png", "ward.png"],
     },
     "new": {
         **COMMON_ICON_FILENAMES,
@@ -42,6 +43,7 @@ ICON_SETS = {
         "Q2": "Q_recast.png",
         "R": "R.png",
         "W": "W.png",
+        "ward": "ward.png",
     },
 }
 
@@ -89,7 +91,7 @@ def load_icons(
     icon_directory: Path,
     keys: set[str],
     maximum_size: int,
-    icon_filenames: dict[str, str],
+    icon_filenames: dict[str, str | list[str]],
 ) -> dict[str, Image.Image]:
     unknown_keys = sorted(keys - icon_filenames.keys())
     if unknown_keys:
@@ -99,7 +101,16 @@ def load_icons(
 
     icons: dict[str, Image.Image] = {}
     for key in sorted(keys):
-        path = icon_directory / icon_filenames[key]
+        filenames = icon_filenames[key]
+        candidates = filenames if isinstance(filenames, list) else [filenames]
+        path = next(
+            (
+                icon_directory / candidate
+                for candidate in candidates
+                if (icon_directory / candidate).is_file()
+            ),
+            icon_directory / candidates[0],
+        )
         if not path.is_file():
             raise FileNotFoundError(f"Render icon not found for {key}: {path}")
         with Image.open(path) as source:
