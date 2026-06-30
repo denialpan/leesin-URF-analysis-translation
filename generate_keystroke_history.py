@@ -133,15 +133,20 @@ def infer_keystrokes(
     state_data: dict[str, object],
     rules: dict[str, list[dict[str, object]]],
     recast_timeout: float = RECAST_VALIDATION_SECONDS,
+    excluded_keys: set[str] | None = None,
 ) -> tuple[list[dict[str, object]], list[dict[str, object]]]:
     source_events = state_data.get("events", [])
     if not isinstance(source_events, list):
         raise ValueError("HUD-state JSON has no valid 'events' array.")
 
+    excluded_key_lookup = {
+        key.casefold() for key in (excluded_keys or set()) if key.strip()
+    }
     transition_lookup = {
         (region, str(rule["from"]), str(rule["to"])): rule
         for region, region_rules in rules.items()
         for rule in region_rules
+        if str(rule["key"]).casefold() not in excluded_key_lookup
     }
     preceding = previous_region_events(source_events)
     keystrokes: list[dict[str, object]] = []
@@ -242,6 +247,12 @@ def parse_args() -> argparse.Namespace:
         type=float,
         default=RECAST_VALIDATION_SECONDS,
     )
+    parser.add_argument(
+        "--exclude-key",
+        action="append",
+        default=[],
+        help="Keystroke key to omit from the generated history.",
+    )
     return parser.parse_args()
 
 
@@ -253,7 +264,10 @@ def main() -> None:
     rules = parse_rules(args.rules)
     state_data = json.loads(args.states.read_text(encoding="utf-8"))
     keystrokes, rejected = infer_keystrokes(
-        state_data, rules, args.recast_timeout
+        state_data,
+        rules,
+        args.recast_timeout,
+        {key.strip() for key in args.exclude_key if key.strip()},
     )
     output = args.output or args.states.with_name(
         f"{args.states.stem.removesuffix('.hud-states')}.keystrokes.json"
@@ -261,6 +275,9 @@ def main() -> None:
     payload = {
         "source": str(args.states.resolve()),
         "recast_timeout_seconds": args.recast_timeout,
+        "excluded_keys": sorted(
+            {key.strip() for key in args.exclude_key if key.strip()}
+        ),
         "rules": rules,
         "events": keystrokes,
         "rejected_candidates": rejected,

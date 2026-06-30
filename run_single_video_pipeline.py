@@ -44,6 +44,20 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--confidence", type=float, default=0.55)
     parser.add_argument("--stable-frames", type=int, default=2)
     parser.add_argument("--recast-timeout", type=float, default=3.1)
+    ward_group = parser.add_mutually_exclusive_group()
+    ward_group.add_argument(
+        "--include-ward",
+        dest="include_ward",
+        action="store_true",
+        default=True,
+        help="Include ward events in the keystroke history.",
+    )
+    ward_group.add_argument(
+        "--no-ward",
+        dest="include_ward",
+        action="store_false",
+        help="Omit ward events from the keystroke history overlay.",
+    )
     parser.add_argument(
         "--force",
         action="store_true",

@@ -13,6 +13,11 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 VIDEO_EXTENSIONS = {".mp4", ".mov", ".mkv", ".webm"}
+GENERATED_VIDEO_SUFFIXES = (
+    ".counter.overlay.mov",
+    ".keystrokes.history.overlay.mov",
+    ".overlay.mov",
+)
 
 
 def default_whisper_python() -> Path:
@@ -129,6 +134,20 @@ def parse_args() -> argparse.Namespace:
         "--recast-timeout",
         type=float,
         default=3.1,
+    )
+    ward_group = parser.add_mutually_exclusive_group()
+    ward_group.add_argument(
+        "--include-ward",
+        dest="include_ward",
+        action="store_true",
+        default=True,
+        help="Include ward events in the keystroke history.",
+    )
+    ward_group.add_argument(
+        "--no-ward",
+        dest="include_ward",
+        action="store_false",
+        help="Omit ward events from the keystroke history overlay.",
     )
     parser.add_argument(
         "--force",
@@ -290,7 +309,9 @@ def discover_videos(directory: Path) -> list[Path]:
         (
             path.resolve()
             for path in directory.iterdir()
-            if path.is_file() and path.suffix.casefold() in VIDEO_EXTENSIONS
+            if path.is_file()
+            and path.suffix.casefold() in VIDEO_EXTENSIONS
+            and not path.name.casefold().endswith(GENERATED_VIDEO_SUFFIXES)
         ),
         key=lambda path: path.name.casefold(),
     )
@@ -416,19 +437,22 @@ def process_hud(
         states_changed or should_run(paths["keystrokes"], force_hud_artifacts)
     )
     if keystrokes_changed:
+        keystroke_command = [
+            python,
+            str(SCRIPT_DIR / "generate_keystroke_history.py"),
+            str(paths["states"]),
+            "--rules",
+            str(SCRIPT_DIR / "keystrokerules.md"),
+            "--recast-timeout",
+            f"{args.recast_timeout:g}",
+            "--output",
+            str(paths["keystrokes"]),
+        ]
+        if not args.include_ward:
+            keystroke_command.extend(["--exclude-key", "ward"])
         run_command(
             "Generate keystroke history",
-            [
-                python,
-                str(SCRIPT_DIR / "generate_keystroke_history.py"),
-                str(paths["states"]),
-                "--rules",
-                str(SCRIPT_DIR / "keystrokerules.md"),
-                "--recast-timeout",
-                f"{args.recast_timeout:g}",
-                "--output",
-                str(paths["keystrokes"]),
-            ],
+            keystroke_command,
             args.dry_run,
         )
     else:
