@@ -48,6 +48,15 @@ def parse_args() -> argparse.Namespace:
         help="Minimum classifier probability accepted as a state.",
     )
     parser.add_argument(
+        "--cward-ready-confidence",
+        type=float,
+        default=0.85,
+        help=(
+            "Minimum classifier probability required specifically for the "
+            "cward ready state."
+        ),
+    )
+    parser.add_argument(
         "--stable-frames",
         type=int,
         default=2,
@@ -139,6 +148,10 @@ def main() -> None:
     args = parse_args()
     if args.sample_fps <= 0:
         raise ValueError("--sample-fps must be greater than zero.")
+    if not 0 <= args.confidence <= 1:
+        raise ValueError("--confidence must be between zero and one.")
+    if not 0 <= args.cward_ready_confidence <= 1:
+        raise ValueError("--cward-ready-confidence must be between zero and one.")
     if args.stable_frames < 1:
         raise ValueError("--stable-frames must be at least one.")
     if args.start < 0:
@@ -235,6 +248,12 @@ def main() -> None:
                 label, confidence = classify_region(
                     models[name], image, args.confidence
                 )
+                if (
+                    name.casefold() == "cward"
+                    and label == "ready"
+                    and confidence < args.cward_ready_confidence
+                ):
+                    label = "uncertain"
                 queue = pending[name]
                 queue.append(label)
                 if (
@@ -323,6 +342,7 @@ def main() -> None:
         "analysis_end": analyzed_end,
         "analysis_fps": sample_fps,
         "confidence_threshold": args.confidence,
+        "cward_ready_confidence_threshold": args.cward_ready_confidence,
         "stable_frames": args.stable_frames,
         "reported_states": sorted(OUTPUT_STATES),
         "events": [

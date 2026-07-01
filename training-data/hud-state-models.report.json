@@ -60,12 +60,12 @@
     "validation_accuracy": 1.0
   },
   "cward": {
-    "samples": 148,
+    "samples": 129,
     "labels": {
       "cooldown": 31,
-      "disabled": 37,
-      "missing": 32,
-      "ready": 48
+      "disabled": 38,
+      "missing": 2,
+      "ready": 58
     },
     "validation_accuracy": 1.0
   },
@@ -89,11 +89,11 @@
     "validation_accuracy": 1.0
   },
   "ward": {
-    "samples": 180,
+    "samples": 469,
     "labels": {
-      "cooldown": 110,
-      "disabled": 5,
-      "ready": 65
+      "cooldown": 220,
+      "disabled": 16,
+      "ready": 233
     },
     "validation_accuracy": 1.0
   }

@@ -1,0 +1,152 @@
+{
+  "source": "D:\\daniel\\leesin-urf-compilation-project\\debug-cward-beast\\hud-states-tight.json",
+  "recast_timeout_seconds": 3.1,
+  "excluded_keys": [],
+  "rules": {
+    "q": [
+      {
+        "key": "Q1",
+        "from": "ready",
+        "to": "*",
+        "exclude": []
+      },
+      {
+        "key": "Q2",
+        "from": "recast",
+        "to": "*",
+        "exclude": [
+          "disabled",
+          "missing"
+        ]
+      }
+    ],
+    "w": [
+      {
+        "key": "W",
+        "from": "ready",
+        "to": "recast",
+        "exclude": []
+      }
+    ],
+    "e": [
+      {
+        "key": "E",
+        "from": "ready",
+        "to": "*",
+        "exclude": [
+          "disabled",
+          "missing"
+        ]
+      }
+    ],
+    "r": [
+      {
+        "key": "R",
+        "from": "ready",
+        "to": "cooldown",
+        "exclude": []
+      }
+    ],
+    "d": [
+      {
+        "key": "cleanse",
+        "from": "ready",
+        "to": "cooldown",
+        "exclude": []
+      }
+    ],
+    "f": [
+      {
+        "key": "flash",
+        "from": "ready",
+        "to": "cooldown",
+        "exclude": []
+      }
+    ],
+    "prowler": [
+      {
+        "key": "prowler",
+        "from": "ready",
+        "to": "cooldown",
+        "exclude": []
+      }
+    ],
+    "rocketbelt": [
+      {
+        "key": "rocketbelt",
+        "from": "ready",
+        "to": "cooldown",
+        "exclude": []
+      }
+    ],
+    "ward": [
+      {
+        "key": "ward",
+        "from": "ready",
+        "to": "cooldown",
+        "exclude": []
+      }
+    ],
+    "cward": [
+      {
+        "key": "cward",
+        "from": "ready",
+        "to": "cooldown",
+        "exclude": []
+      },
+      {
+        "key": "cward",
+        "from": "ready",
+        "to": "missing",
+        "exclude": []
+      }
+    ]
+  },
+  "events": [
+    {
+      "timestamp": 475.75,
+      "frame": 28545,
+      "region": "W",
+      "key": "W",
+      "transition": {
+        "from": "ready",
+        "to": "recast"
+      },
+      "confidence": 1.0
+    },
+    {
+      "timestamp": 476.416667,
+      "frame": 28585,
+      "region": "Q",
+      "key": "Q1",
+      "transition": {
+        "from": "ready",
+        "to": "cooldown"
+      },
+      "confidence": 0.999987
+    },
+    {
+      "timestamp": 478.183333,
+      "frame": 28691,
+      "region": "Q",
+      "key": "Q1",
+      "transition": {
+        "from": "ready",
+        "to": "cooldown"
+      },
+      "confidence": 0.999983
+    },
+    {
+      "timestamp": 478.283333,
+      "frame": 28697,
+      "region": "W",
+      "key": "W",
+      "transition": {
+        "from": "ready",
+        "to": "recast"
+      },
+      "confidence": 1.0
+    }
+  ],
+  "rejected_candidates": []
+}

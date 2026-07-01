@@ -1,0 +1,418 @@
+{
+  "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+  "source_fps": 60.0,
+  "source_frames": 31697,
+  "duration": 528.283333,
+  "analysis_start": 475.0,
+  "analysis_end": 480.0,
+  "analysis_fps": 60.0,
+  "confidence_threshold": 0.55,
+  "cward_ready_confidence_threshold": 0.85,
+  "stable_frames": 2,
+  "reported_states": [
+    "cooldown",
+    "disabled",
+    "missing",
+    "ready",
+    "recast"
+  ],
+  "events": [
+    {
+      "region": "D",
+      "state": "ready",
+      "previous_state": null,
+      "timestamp": 475.0,
+      "frame": 28500,
+      "confidence": 0.999885
+    },
+    {
+      "region": "E",
+      "state": "disabled",
+      "previous_state": null,
+      "timestamp": 475.0,
+      "frame": 28500,
+      "confidence": 0.999896
+    },
+    {
+      "region": "F",
+      "state": "disabled",
+      "previous_state": null,
+      "timestamp": 475.0,
+      "frame": 28500,
+      "confidence": 0.999999
+    },
+    {
+      "region": "Q",
+      "state": "disabled",
+      "previous_state": null,
+      "timestamp": 475.0,
+      "frame": 28500,
+      "confidence": 0.999982
+    },
+    {
+      "region": "R",
+      "state": "disabled",
+      "previous_state": null,
+      "timestamp": 475.0,
+      "frame": 28500,
+      "confidence": 1.0
+    },
+    {
+      "region": "W",
+      "state": "disabled",
+      "previous_state": null,
+      "timestamp": 475.0,
+      "frame": 28500,
+      "confidence": 0.998162
+    },
+    {
+      "region": "cward",
+      "state": "missing",
+      "previous_state": null,
+      "timestamp": 475.0,
+      "frame": 28500,
+      "confidence": 0.936108
+    },
+    {
+      "region": "prowler",
+      "state": "disabled",
+      "previous_state": null,
+      "timestamp": 475.0,
+      "frame": 28500,
+      "confidence": 0.999971
+    },
+    {
+      "region": "ward",
+      "state": "disabled",
+      "previous_state": null,
+      "timestamp": 475.0,
+      "frame": 28500,
+      "confidence": 1.0
+    },
+    {
+      "region": "E",
+      "state": "ready",
+      "previous_state": "disabled",
+      "timestamp": 475.616667,
+      "frame": 28537,
+      "confidence": 0.999444
+    },
+    {
+      "region": "F",
+      "state": "ready",
+      "previous_state": "disabled",
+      "timestamp": 475.616667,
+      "frame": 28537,
+      "confidence": 1.0
+    },
+    {
+      "region": "Q",
+      "state": "ready",
+      "previous_state": "disabled",
+      "timestamp": 475.616667,
+      "frame": 28537,
+      "confidence": 0.99883
+    },
+    {
+      "region": "R",
+      "state": "ready",
+      "previous_state": "disabled",
+      "timestamp": 475.616667,
+      "frame": 28537,
+      "confidence": 1.0
+    },
+    {
+      "region": "W",
+      "state": "ready",
+      "previous_state": "disabled",
+      "timestamp": 475.616667,
+      "frame": 28537,
+      "confidence": 0.99956
+    },
+    {
+      "region": "cward",
+      "state": "cooldown",
+      "previous_state": "missing",
+      "timestamp": 475.616667,
+      "frame": 28537,
+      "confidence": 0.817092
+    },
+    {
+      "region": "prowler",
+      "state": "ready",
+      "previous_state": "disabled",
+      "timestamp": 475.616667,
+      "frame": 28537,
+      "confidence": 1.0
+    },
+    {
+      "region": "ward",
+      "state": "ready",
+      "previous_state": "disabled",
+      "timestamp": 475.616667,
+      "frame": 28537,
+      "confidence": 1.0
+    },
+    {
+      "region": "W",
+      "state": "recast",
+      "previous_state": "ready",
+      "timestamp": 475.75,
+      "frame": 28545,
+      "confidence": 1.0
+    },
+    {
+      "region": "W",
+      "state": "cooldown",
+      "previous_state": "recast",
+      "timestamp": 475.866667,
+      "frame": 28552,
+      "confidence": 0.999995
+    },
+    {
+      "region": "Q",
+      "state": "cooldown",
+      "previous_state": "ready",
+      "timestamp": 476.416667,
+      "frame": 28585,
+      "confidence": 0.999987
+    },
+    {
+      "region": "W",
+      "state": "missing",
+      "previous_state": "cooldown",
+      "timestamp": 477.0,
+      "frame": 28620,
+      "confidence": 0.972175
+    },
+    {
+      "region": "W",
+      "state": "ready",
+      "previous_state": "missing",
+      "timestamp": 477.066667,
+      "frame": 28624,
+      "confidence": 0.90869
+    },
+    {
+      "region": "Q",
+      "state": "ready",
+      "previous_state": "cooldown",
+      "timestamp": 477.65,
+      "frame": 28659,
+      "confidence": 0.999875
+    },
+    {
+      "region": "Q",
+      "state": "cooldown",
+      "previous_state": "ready",
+      "timestamp": 478.183333,
+      "frame": 28691,
+      "confidence": 0.999983
+    },
+    {
+      "region": "W",
+      "state": "recast",
+      "previous_state": "ready",
+      "timestamp": 478.283333,
+      "frame": 28697,
+      "confidence": 1.0
+    },
+    {
+      "region": "W",
+      "state": "cooldown",
+      "previous_state": "recast",
+      "timestamp": 478.533333,
+      "frame": 28712,
+      "confidence": 0.999998
+    },
+    {
+      "region": "Q",
+      "state": "ready",
+      "previous_state": "cooldown",
+      "timestamp": 479.4,
+      "frame": 28764,
+      "confidence": 0.999879
+    },
+    {
+      "region": "W",
+      "state": "missing",
+      "previous_state": "cooldown",
+      "timestamp": 479.483333,
+      "frame": 28769,
+      "confidence": 0.888774
+    },
+    {
+      "region": "W",
+      "state": "ready",
+      "previous_state": "missing",
+      "timestamp": 479.55,
+      "frame": 28773,
+      "confidence": 0.940584
+    }
+  ],
+  "segments": {
+    "D": [
+      {
+        "state": "ready",
+        "start": 475.0,
+        "end": 480.0
+      }
+    ],
+    "E": [
+      {
+        "state": "disabled",
+        "start": 475.0,
+        "end": 475.616667
+      },
+      {
+        "state": "ready",
+        "start": 475.616667,
+        "end": 480.0
+      }
+    ],
+    "F": [
+      {
+        "state": "disabled",
+        "start": 475.0,
+        "end": 475.616667
+      },
+      {
+        "state": "ready",
+        "start": 475.616667,
+        "end": 480.0
+      }
+    ],
+    "Q": [
+      {
+        "state": "disabled",
+        "start": 475.0,
+        "end": 475.616667
+      },
+      {
+        "state": "ready",
+        "start": 475.616667,
+        "end": 476.416667
+      },
+      {
+        "state": "cooldown",
+        "start": 476.416667,
+        "end": 477.65
+      },
+      {
+        "state": "ready",
+        "start": 477.65,
+        "end": 478.183333
+      },
+      {
+        "state": "cooldown",
+        "start": 478.183333,
+        "end": 479.4
+      },
+      {
+        "state": "ready",
+        "start": 479.4,
+        "end": 480.0
+      }
+    ],
+    "R": [
+      {
+        "state": "disabled",
+        "start": 475.0,
+        "end": 475.616667
+      },
+      {
+        "state": "ready",
+        "start": 475.616667,
+        "end": 480.0
+      }
+    ],
+    "W": [
+      {
+        "state": "disabled",
+        "start": 475.0,
+        "end": 475.616667
+      },
+      {
+        "state": "ready",
+        "start": 475.616667,
+        "end": 475.75
+      },
+      {
+        "state": "recast",
+        "start": 475.75,
+        "end": 475.866667
+      },
+      {
+        "state": "cooldown",
+        "start": 475.866667,
+        "end": 477.0
+      },
+      {
+        "state": "missing",
+        "start": 477.0,
+        "end": 477.066667
+      },
+      {
+        "state": "ready",
+        "start": 477.066667,
+        "end": 478.283333
+      },
+      {
+        "state": "recast",
+        "start": 478.283333,
+        "end": 478.533333
+      },
+      {
+        "state": "cooldown",
+        "start": 478.533333,
+        "end": 479.483333
+      },
+      {
+        "state": "missing",
+        "start": 479.483333,
+        "end": 479.55
+      },
+      {
+        "state": "ready",
+        "start": 479.55,
+        "end": 480.0
+      }
+    ],
+    "cward": [
+      {
+        "state": "missing",
+        "start": 475.0,
+        "end": 475.616667
+      },
+      {
+        "state": "cooldown",
+        "start": 475.616667,
+        "end": 480.0
+      }
+    ],
+    "prowler": [
+      {
+        "state": "disabled",
+        "start": 475.0,
+        "end": 475.616667
+      },
+      {
+        "state": "ready",
+        "start": 475.616667,
+        "end": 480.0
+      }
+    ],
+    "ward": [
+      {
+        "state": "disabled",
+        "start": 475.0,
+        "end": 475.616667
+      },
+      {
+        "state": "ready",
+        "start": 475.616667,
+        "end": 480.0
+      }
+    ]
+  }
+}

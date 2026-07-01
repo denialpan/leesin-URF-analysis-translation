@@ -23588,6 +23588,891 @@
         "width": 28,
         "height": 27
       }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19020,
+      "timestamp": 317.0,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "ready",
+      "crop": "images/cward/ready/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019020.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19021,
+      "timestamp": 317.016666667,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "ready",
+      "crop": "images/cward/ready/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019021.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19022,
+      "timestamp": 317.033333333,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "ready",
+      "crop": "images/cward/ready/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019022.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19023,
+      "timestamp": 317.05,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "ready",
+      "crop": "images/cward/ready/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019023.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19024,
+      "timestamp": 317.066666667,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "ready",
+      "crop": "images/cward/ready/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019024.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19025,
+      "timestamp": 317.083333333,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "ready",
+      "crop": "images/cward/ready/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019025.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19026,
+      "timestamp": 317.1,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "ready",
+      "crop": "images/cward/ready/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019026.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19027,
+      "timestamp": 317.116666667,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "ready",
+      "crop": "images/cward/ready/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019027.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19028,
+      "timestamp": 317.133333333,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "ready",
+      "crop": "images/cward/ready/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019028.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19029,
+      "timestamp": 317.15,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "ready",
+      "crop": "images/cward/ready/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019029.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19030,
+      "timestamp": 317.166666667,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "ready",
+      "crop": "images/cward/ready/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019030.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19031,
+      "timestamp": 317.183333333,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "ready",
+      "crop": "images/cward/ready/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019031.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19032,
+      "timestamp": 317.2,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "cooldown",
+      "crop": "images/cward/cooldown/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019032.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19033,
+      "timestamp": 317.216666667,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "cooldown",
+      "crop": "images/cward/cooldown/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019033.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19034,
+      "timestamp": 317.233333333,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "cooldown",
+      "crop": "images/cward/cooldown/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019034.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19035,
+      "timestamp": 317.25,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "cooldown",
+      "crop": "images/cward/cooldown/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019035.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19036,
+      "timestamp": 317.266666667,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "cooldown",
+      "crop": "images/cward/cooldown/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019036.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19037,
+      "timestamp": 317.283333333,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "cooldown",
+      "crop": "images/cward/cooldown/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019037.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19038,
+      "timestamp": 317.3,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "cooldown",
+      "crop": "images/cward/cooldown/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019038.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19039,
+      "timestamp": 317.316666667,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "cooldown",
+      "crop": "images/cward/cooldown/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019039.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19040,
+      "timestamp": 317.333333333,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "cooldown",
+      "crop": "images/cward/cooldown/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019040.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19041,
+      "timestamp": 317.35,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "cooldown",
+      "crop": "images/cward/cooldown/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019041.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19042,
+      "timestamp": 317.366666667,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "cooldown",
+      "crop": "images/cward/cooldown/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019042.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19043,
+      "timestamp": 317.383333333,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "cooldown",
+      "crop": "images/cward/cooldown/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019043.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19044,
+      "timestamp": 317.4,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "cooldown",
+      "crop": "images/cward/cooldown/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019044.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19045,
+      "timestamp": 317.416666667,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "cooldown",
+      "crop": "images/cward/cooldown/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019045.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19046,
+      "timestamp": 317.433333333,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "cooldown",
+      "crop": "images/cward/cooldown/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019046.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19047,
+      "timestamp": 317.45,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "cooldown",
+      "crop": "images/cward/cooldown/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019047.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19048,
+      "timestamp": 317.466666667,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "cooldown",
+      "crop": "images/cward/cooldown/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019048.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19049,
+      "timestamp": 317.483333333,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "cooldown",
+      "crop": "images/cward/cooldown/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019049.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19050,
+      "timestamp": 317.5,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "cooldown",
+      "crop": "images/cward/cooldown/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019050.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19051,
+      "timestamp": 317.516666667,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "cooldown",
+      "crop": "images/cward/cooldown/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019051.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19052,
+      "timestamp": 317.533333333,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "cooldown",
+      "crop": "images/cward/cooldown/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019052.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19053,
+      "timestamp": 317.55,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "cooldown",
+      "crop": "images/cward/cooldown/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019053.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19054,
+      "timestamp": 317.566666667,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "cooldown",
+      "crop": "images/cward/cooldown/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019054.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19055,
+      "timestamp": 317.583333333,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "cooldown",
+      "crop": "images/cward/cooldown/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019055.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19056,
+      "timestamp": 317.6,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "cooldown",
+      "crop": "images/cward/cooldown/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019056.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19057,
+      "timestamp": 317.616666667,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "cooldown",
+      "crop": "images/cward/cooldown/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019057.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19058,
+      "timestamp": 317.633333333,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "cooldown",
+      "crop": "images/cward/cooldown/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019058.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19059,
+      "timestamp": 317.65,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "cooldown",
+      "crop": "images/cward/cooldown/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019059.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19060,
+      "timestamp": 317.666666667,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "cooldown",
+      "crop": "images/cward/cooldown/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019060.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19061,
+      "timestamp": 317.683333333,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "cooldown",
+      "crop": "images/cward/cooldown/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019061.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19062,
+      "timestamp": 317.7,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "ready",
+      "crop": "images/cward/ready/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019062.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19063,
+      "timestamp": 317.716666667,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "ready",
+      "crop": "images/cward/ready/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019063.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19064,
+      "timestamp": 317.733333333,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "ready",
+      "crop": "images/cward/ready/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019064.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19065,
+      "timestamp": 317.75,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "ready",
+      "crop": "images/cward/ready/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019065.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19066,
+      "timestamp": 317.766666667,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "ready",
+      "crop": "images/cward/ready/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019066.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19067,
+      "timestamp": 317.783333333,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "ready",
+      "crop": "images/cward/ready/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019067.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19068,
+      "timestamp": 317.8,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "ready",
+      "crop": "images/cward/ready/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019068.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19069,
+      "timestamp": 317.816666667,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "ready",
+      "crop": "images/cward/ready/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019069.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19070,
+      "timestamp": 317.833333333,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "ready",
+      "crop": "images/cward/ready/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019070.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19071,
+      "timestamp": 317.85,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "ready",
+      "crop": "images/cward/ready/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019071.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19072,
+      "timestamp": 317.866666667,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "ready",
+      "crop": "images/cward/ready/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019072.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19073,
+      "timestamp": 317.883333333,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "ready",
+      "crop": "images/cward/ready/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019073.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19074,
+      "timestamp": 317.9,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "ready",
+      "crop": "images/cward/ready/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019074.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19075,
+      "timestamp": 317.916666667,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "ready",
+      "crop": "images/cward/ready/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019075.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19076,
+      "timestamp": 317.933333333,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "ready",
+      "crop": "images/cward/ready/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019076.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19077,
+      "timestamp": 317.95,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "ready",
+      "crop": "images/cward/ready/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019077.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
+    },
+    {
+      "video": "D:\\daniel\\leesin-urf-compilation-project\\downloads\\old\\This Lee Sin is an URF BEAST [youtu.be_VHlnmnQYHBY].mp4",
+      "frame": 19078,
+      "timestamp": 317.966666667,
+      "fps": 60.0,
+      "region": "cward",
+      "label": "ready",
+      "crop": "images/cward/ready/This_Lee_Sin_is_an_URF_BEAST__youtu.be_VHlnmnQYHBY_7c55463bdd_frame_00019078.png",
+      "region_box": {
+        "x": 1072,
+        "y": 992,
+        "width": 28,
+        "height": 27
+      }
     }
   ]
 }
