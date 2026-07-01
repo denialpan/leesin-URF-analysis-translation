@@ -159,9 +159,9 @@ def infer_keystrokes(
             continue
         previous_state = str(previous).casefold()
         state = str(event.get("state", "")).casefold()
-        if state in EXCLUDED_DESTINATION_STATES:
-            continue
         matched_rule = transition_lookup.get((region, previous_state, state))
+        if state in EXCLUDED_DESTINATION_STATES and matched_rule is None:
+            continue
         if matched_rule is None:
             matched_rule = transition_lookup.get(
                 (region, previous_state, ANY_STATE)

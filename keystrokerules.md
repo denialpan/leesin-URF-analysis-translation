@@ -26,7 +26,8 @@ assume that for each group, it is intended for the associated region, then its s
   - "rocketbelt": "ready" -> "cooldown"
 
 "ward":
-  - "ward": "ready" -> anystate
+  - "ward": "ready" -> "cooldown"
 
 "cward":
-  - "cward": "ready" -> anystate
+  - "cward": "ready" -> "cooldown"
+  - "cward": "ready" -> "missing"
